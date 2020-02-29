@@ -8,7 +8,6 @@ const mapStateToProps = state => {
     return {
         photos: Object.values(state.entities.photos),
         
-        
     }
 };
 
