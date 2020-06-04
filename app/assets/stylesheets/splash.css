@@ -1,0 +1,166 @@
+.splash-nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 64px;
+    background-color: white;
+    
+}
+
+.splash-nav-header{
+    font-size: 27px;
+    margin-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    position: absolute;
+    font-weight: lighter;
+ 
+
+}
+
+.splash-login {
+    font-size: 17px;
+    margin-left: 780px;
+    padding:  18px;
+    padding-top: 22px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bolder;
+}
+.splash-signup {
+    margin-right: 5 px;
+   font-weight: bold;
+    font-size: 15px;
+    padding: 0 16px;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.splash-img {
+      
+      
+
+}
+
+.splash-text-top{
+    font-family: sans-serif;
+    position: absolute;
+    top: 185px;
+    left: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 50px;
+    font-style: smooth;
+    text-shadow: black 0px 0px 4px;
+
+}
+.splash-text-mid{
+    font-family: sans-serif;
+    position: absolute;
+    top: 235px;
+    left: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 50px;
+    font-style: smooth;
+    text-shadow: black 0px 0px 4px;
+
+}
+.splash-text-bottom{
+    font-family: sans-serif;
+    position: absolute;
+    top: 285px;
+    left: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 50px;
+    font-style: smooth;
+    text-shadow: black 0px 0px 4px;
+}
+.splash-mini-bottom{
+    font-family: sans-serif;
+    position: absolute;
+    top: 360px;
+    left: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 50px;
+    font-style: smooth;
+    text-shadow: black 0px 0px 3px;
+  
+}
+.splash-mini-bottom2{
+    font-family: sans-serif;
+    position: absolute;
+    top: 375px;
+    left: 16px;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 50px;
+    font-style: smooth;
+    text-shadow: black 0px 0px 3px;
+   
+}
+
+.signup-button {
+    color: white;
+    background-color:white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 375px;
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    margin-left: 120px;
+    font-style: smooth;
+    border-radius: 20px;
+ 
+}
+
+    /* top: 350px;
+    left: 200;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 16px;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+    position: absolute;
+    font-family: sans-serif; */
+    
+

@@ -29,6 +29,7 @@ class LoginForm extends React.Component {
     render () {
         return (
             <div>
+                <h1>Aperture</h1>
                 <h2>Login!</h2>
                     <form>
                         <label>Username:
