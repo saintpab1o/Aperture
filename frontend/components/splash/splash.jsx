@@ -43,7 +43,11 @@ const Splash = ({ currentUser, logout }) => {
             
         </div>
 
-        <div></div>
+        <div>
+        <div className= "signup-button">
+        <Link to="/signup">Sign up</Link>
+          </div>
+        </div>
   
 
 

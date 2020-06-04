@@ -58,14 +58,10 @@ a {
 }
 
 a:hover {
-    color: lightblue;
+    color: purple;
 }
 
-.splash-img {
-      
-      
 
-}
 
 .splash-text-top{
     font-family: sans-serif;
@@ -138,29 +134,24 @@ a:hover {
 }
 
 .signup-button {
+    display: block;
     color: white;
     background-color:white;
     font-family: sans-serif;
     position: absolute;
-    top: 375px;
+    top: 415px;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 20px;
     position: absolute;
-    margin-left: 120px;
+    margin-left: 55px;
     font-style: smooth;
-    border-radius: 20px;
- 
+    border: 30px solid white;
+    border-width: 20px;
+    border-radius: 30px;
+    border-top: 20px;
+    border-bottom: 20px;
+    padding: 10px;
+    
 }
 
-    /* top: 350px;
-    left: 200;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 0 16px;
-    height: 30px;
-    border-radius: 16px;
-    border: 1.5px solid black;
-    position: absolute;
-    font-family: sans-serif; */
-    
 
