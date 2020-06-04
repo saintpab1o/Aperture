@@ -13,6 +13,14 @@ export const login = user => (
       data: { user }
     })
   );
+
+  export const deleteUser = reportId => (
+    $.ajax ({
+        method: 'DELETE',
+        url: `/api/users/${userId}`,
+      
+    })
+)
   
   export const logout = () => (
     $.ajax({

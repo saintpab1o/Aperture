@@ -8,11 +8,11 @@ import * as SessionUtil from './util/session.js'
 document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
 
- // // TESTING START
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
-  window.ajax = SessionUtil;
-  // //  TESTING END
+//  // TESTING START
+//   window.getState = store.getState;
+//   window.dispatch = store.dispatch;
+//   window.ajax = SessionUtil;
+//  TESTING END
 
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store} />, root);
