@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,26 +30,80 @@ class LoginForm extends React.Component {
     render () {
         return (
             <div>
-                <h1>Aperture</h1>
-                <h2>Login!</h2>
+
+                <div className="login-nav-header">
+                    <Link to="/">Aperture</Link>
+                </div>
+
+                <div className="splash-nav">
+                
+                <div class="login-text-top">Log in to Aperture</div>
+                
+                
+                <a className= "splash-login">
+                    <Link to="/login">Log in</Link>
+                     <br></br>
+                </a>
+
+                <div className= "splash-signup">
+                    <a><Link to="/signup">Sign up</Link></a>
+             </div>
+             </div>
+
+            <div className="outerbox">
+           
+
+                <div
+                    className="form-container">
+                
+               
                     <form>
-                        <label>Username:
-                            <input
-                                type="text"
-                                value={this.state.username}
-                                onChange={this.handleInput('username')}
+                        <div 
+                            className="username-input">
+
+                            <label>Username:
+                                <br></br>
+                            <   input
+                                    type="text"
+                                    value={this.state.username}
+                                    onChange={this.handleInput('username')}
                             />
-                        </label>
+                            </label>
+                        </div>
+
+                        <br></br>
+
+                        <div 
+                            className="password-input">
                       
                         <label>Password:
+
+                            <br></br>
                             <input
                                 type="password"
                                 value={this.state.password}
                                 onChange={this.handleInput('password')}
                             />
                         </label>
-                        <button onClick={this.handleSubmit}>Login</button>
+                        </div>
+
+                        <div className="login-button"> 
+                           <button onClick={this.handleSubmit}>Login</button>
+                        </div>
+
+                        <div className="account-text"> 
+                            Don't have an account? 
+                        </div>
+                        
+                        <div className="account-link"> 
+                        <a><Link to="/signup">Sign up</Link></a>
+                        </div>
+
                     </form>
+                </div>
+            
+
+            </div>
             </div>
         )
     }

@@ -1,0 +1,122 @@
+.form-container {
+    width: 400px;
+    height: 554px;
+    background-color: white;  
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: .1px hidden lightgrey;
+    border-style: solid;
+    
+}
+
+.login-nav-header{
+    font-size: 27px;
+    margin-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    position: absolute;
+    font-weight: lighter;
+}
+
+
+
+.outerbox {
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 248, 250);
+    
+   
+ }
+
+ .login-text-top{
+     
+    position: absolute;
+    top: 27%;
+    left: 41%;
+    font-family: sans-serif;
+    z-index: 1;
+    font-size: 25px;
+    
+    
+
+ }
+
+ .username-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+   font-size: 14px;
+    left: 25%;
+    font-family: sans-serif;
+    color: gray;
+}
+
+
+ .password-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;  
+    font-size: 14px;
+    left: 25%;
+    font-family: sans-serif;
+    color: gray;
+}
+
+
+.login-button{
+    border: black;
+    border-radius: 20px;
+    margin-top: 5%; 
+    display: flex;
+    justify-content: center;
+
+}
+
+.account-text{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    font-family: sans-serif;
+    color: grey;
+}
+.account-link{
+    
+    font-weight: bold;
+     font-size: 15px;
+     padding: 0 16px;
+     height: 30px;
+     border-radius: 16px;
+     border: 1.5px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: sans-serif;
+     width: 15%;
+     margin-top: 25px;
+     margin-left: 155px;
+
+}
+
+
+    
+
+input {
+    width: 350px;
+    height: 48px;
+    border-radius: 1px;
+    margin: 8px 0;
+}
+
+
+
+ 
+  
+  
