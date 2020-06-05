@@ -15,14 +15,15 @@ const Splash = ({ currentUser, logout }) => {
       <div className="splash-nav">
        
       
-
-        <a className= "splash-login">
+      <div
+         className= "splash-login">
       <Link to="/login">Log in</Link>
+      </div>
       <br></br>
-      </a>
+      
 
       <div className= "splash-signup">
-        <a><Link to="/signup">Sign up</Link></a>
+        <Link to="/signup">Sign up</Link>
       </div>
       
       </div>
@@ -33,14 +34,14 @@ const Splash = ({ currentUser, logout }) => {
      
         <div  className= "splash-img">
       
-            <img src="/assets/splash.jpg" alt="splash-img" width="1400" height="600"></img>
-            <div class="splash-text-top">Discover and share</div>
-            <div class="splash-text-mid">the world’s best</div>
-            <div class="splash-text-bottom">photos</div>
-            <div class="splash-mini-bottom">Get inspired with incredible photos from diverse styles and genres</div>
-            <div class="splash-mini-bottom2">around the world. We're not guided by fads—just great photography.</div>
            
-            
+            <img src={window.splashURL} alt="splash-img" width="1400" height="600"></img>
+
+            <div className="splash-text-top">Discover and share</div>
+            <div className="splash-text-mid">the world’s best</div>
+            <div className="splash-text-bottom">photos</div>
+            <div className="splash-mini-bottom">Get inspired with incredible photos from diverse styles and genres</div>
+            <div className="splash-mini-bottom2">around the world. We're not guided by fads—just great photography.</div>
         </div>
 
         <div>

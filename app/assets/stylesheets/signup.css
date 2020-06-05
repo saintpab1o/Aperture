@@ -76,3 +76,7 @@ button:hover {
     background-color: white;
     cursor: pointer;
 }
+
+.button1{
+    background-color: purple;
+}

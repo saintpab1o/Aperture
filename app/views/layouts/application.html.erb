@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
     <% if current_user %>
       <script>
         window.currentUser = { 
@@ -14,12 +15,12 @@
           "email": "<%= current_user.email %>"
           };
       </script>
+    <% end %>
 
       <script type="text/javascript">
-        window.splashURL = "<%= image_url("/assets/images/splash-page.jpg") %>"
+        window.splashURL = "<%= image_url("splash.jpg") %>";
       </script>
 
-    <% end %>
   </head>
 
   <body>
