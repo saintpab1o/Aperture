@@ -4,8 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 64px;
-    background-color: white;
-    
+    background-color: white;   
 }
 
 .splash-nav-header{
@@ -18,8 +17,6 @@
     font-family: sans-serif;
     position: absolute;
     font-weight: lighter;
- 
-
 }
 
 .splash-login {
@@ -37,6 +34,7 @@
     text-decoration: inherit;
     font-weight: bolder;
 }
+
 .splash-signup {
     margin-right: 5 px;
    font-weight: bold;
@@ -115,9 +113,9 @@ a:hover {
     position: absolute;
     margin-left: 50px;
     font-style: smooth;
-    text-shadow: black 0px 0px 3px;
-  
+    text-shadow: black 0px 0px 3px; 
 }
+
 .splash-mini-bottom2{
     font-family: sans-serif;
     position: absolute;
@@ -130,7 +128,6 @@ a:hover {
     margin-left: 50px;
     font-style: smooth;
     text-shadow: black 0px 0px 3px;
-   
 }
 
 .signup-button {
@@ -151,7 +148,6 @@ a:hover {
     border-top: 20px;
     border-bottom: 20px;
     padding: 10px;
-    
 }
 
 #button2{
@@ -160,13 +156,11 @@ a:hover {
      font-size: 15px;
      padding: 0 16px;
      height: 30px;
- 
      font-family: sans-serif;
 }
 
 .home-feed-text{
     font-family: sans-serif;
-    
     margin-top: 6%;
     margin-left: 5%;
     font-size: 28px;
@@ -178,19 +172,16 @@ a:hover {
     position: absolute;
     margin-top: -54px;
     margin-left: 5%;
-    font-size: 23px;
-  
-  
+    font-size: 23px; 
 }
+
 .home-feed-text3{
     font-family: sans-serif;
     display: flex;
-    margin-top: %;
     color: gray;
     font-size: 14px;
     margin-left: 5%;
-  
-  
 }
+
 
 
