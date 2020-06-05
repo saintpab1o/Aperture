@@ -59,14 +59,33 @@ const Splash = ({ currentUser, logout }) => {
     
   );
   
-  const welcomeMessage = () => (
-     <div>
-        <div className="splash-nav">
-          <h1>Aperture</h1>
-              <h2 >Welcome, {currentUser.username}!</h2>
-            <button  onClick={logout}>Log Out</button>
-         </div>
+const welcomeMessage = () => (
+  <div>
+
+
+
+    <div className="splash-nav-header">
+        <Link to="/">Aperture</Link>
+    </div>
+      
+      <div id='button2'>
+        <button  onClick={logout}>Log Out</button>
       </div>
+
+      <div className="home-feed-text">
+        <h3>Home Feed</h3>
+        </div>
+
+        <div className="home-feed-text2">
+        <h4>Featured photographers</h4>
+        </div>
+        <div className="home-feed-text3">
+        <p>Find photographers to follow</p>
+ </div>
+
+
+      
+    </div>
   );
 
   return currentUser ? welcomeMessage() : sessionLinks();

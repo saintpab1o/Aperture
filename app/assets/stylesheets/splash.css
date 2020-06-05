@@ -154,4 +154,43 @@ a:hover {
     
 }
 
+#button2{
+    margin-left: 75%;
+    font-weight: bold;
+     font-size: 15px;
+     padding: 0 16px;
+     height: 30px;
+ 
+     font-family: sans-serif;
+}
+
+.home-feed-text{
+    font-family: sans-serif;
+    
+    margin-top: 6%;
+    margin-left: 5%;
+    font-size: 28px;
+ 
+  
+}
+.home-feed-text2{
+    font-family: sans-serif;
+    position: absolute;
+    margin-top: -54px;
+    margin-left: 5%;
+    font-size: 23px;
+  
+  
+}
+.home-feed-text3{
+    font-family: sans-serif;
+    display: flex;
+    margin-top: %;
+    color: gray;
+    font-size: 14px;
+    margin-left: 5%;
+  
+  
+}
+
 
