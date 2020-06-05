@@ -44,10 +44,7 @@
     font-family: sans-serif;
     z-index: 1;
     font-size: 25px;
-    
-    
-
- }
+}
 
  .username-input {
     display: flex;
@@ -74,9 +71,10 @@
 .login-button{
     border: black;
     border-radius: 20px;
-    margin-top: 5%; 
-    display: flex;
-    justify-content: center;
+    margin-left: 7%;
+    margin-top: 1.5%; 
+ 
+   
 
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,23 +32,58 @@ class Signup extends React.Component {
     render () {
         return (
             <div>
-                <h2>Sign Up!</h2>
+
+                <div class="signup-text-top">Start Your Journey Today!</div>
+
+                <div className="login-nav-header">
+                    <Link to="/">Aperture</Link>
+                </div>
+
+                <div className="splash-nav">
+                
+               
+                
+                
+                <a className= "splash-login">
+                    <Link to="/login">Log in</Link>
+                     <br></br>
+                </a>
+
+                <div className= "splash-signup">
+                    <a><Link to="/signup">Sign up</Link></a>
+             </div>
+             </div>
+
+                <div className="outerbox">
+           
+
+           <div
+               className="signup-form-container">
+
                     <form>
-                        <label>Username:
-                            <input
-                                type="text"
-                                value={this.state.username}
-                                onChange={this.handleInput('username')}
-                            />
-                            
-                        </label>
-                         <label>Email:
+
+                        <div className="signup-username">
+                             <label>Username:
+                                 <input
+                                    type="text"
+                                    value={this.state.username}
+                                    onChange={this.handleInput('username')}
+                                    />
+                            </label>
+                            </div>
+
+                            <div className="signup-email">
+                            <label>Email:
+                               
                             <input
                                 type="text"
                                 value={this.state.email}
                                 onChange={this.handleInput('email')}
                             />
                         </label>
+                        </div>
+
+                        <div className="signup-password">
                         <label>Password:
                             <input
                                 type="password"
@@ -55,8 +91,16 @@ class Signup extends React.Component {
                                 onChange={this.handleInput('password')}
                             />
                         </label>
-                        <button onClick={this.handleSubmit}>Sign Up</button>
+                        </div>
+
+                        <div id='button1'>
+                            <button onClick={this.handleSubmit}>Sign Up</button>
+                        </div>
+
                     </form>
+
+                    </div>
+                </div>
             </div>
         )
     }
