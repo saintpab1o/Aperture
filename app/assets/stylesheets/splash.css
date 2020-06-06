@@ -2,9 +2,6 @@ body {margin: 0;}
 
 .splash-nav {
     height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 8px 64px;
     background-color: white;
     
@@ -24,22 +21,39 @@ body {margin: 0;}
 
 }
 
-.splash-login {
-    font-size: 17px;
-    margin-left: 780px;
-    padding:  18px;
-    padding-top: 22px;
-    height: 30px;
-    border-radius: 15px;
+.splash-nav{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
     font-family: sans-serif;
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: bolder;
+    
+
 }
-.splash-signup {
+
+.splash-login{
+    
+    margin-right: 2%;
+    font-weight: bolder;
+
+}
+
+.splash-signup{
+
+   font-weight: bold;
+    font-size: 15px;
+    padding: 0 14px;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+/* .splash-signup {
     margin-right: 5 px;
    font-weight: bold;
     font-size: 15px;
@@ -52,7 +66,7 @@ body {margin: 0;}
     align-items: center;
     font-family: sans-serif;
     
-}
+} */
 
 a {
     color: black;

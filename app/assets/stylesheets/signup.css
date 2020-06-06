@@ -61,8 +61,8 @@ button{
     font-weight: bold;
     border: 1.5px solid black;
     border-radius: 20px;
-    color: white;
-    background: black;
+    color: black;
+    background: white;
 }
 button:hover { 
     font-family: sans-serif;
@@ -72,11 +72,31 @@ button:hover {
     border: 1.5px solid black;
     font-weight: bold;
     border-radius: 20px;
-    color:  black;
-    background-color: white;
+    color:  white;
+    background-color: purple;
     cursor: pointer;
 }
 
-.button1{
-    background-color: purple;
+
+
+.footer-signup{
+margin-bottom: 5px;
+  width: 100%;
+  opacity: 96%;
+  background-color: white;
+  z-index: 2;
+    
+}
+
+.left-footer-signup{
+    text-indent: 15px;
+    
+    align-items: center;
+    font-family: sans-serif;
+    color:grey;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+
 }

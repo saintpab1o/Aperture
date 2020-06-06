@@ -20,7 +20,9 @@ const Splash = ({ currentUser, logout }) => {
       <Link to="/login">Log in</Link>
       </div>
      
-      <div className= "splash-signup">
+      
+
+    <div className= "splash-signup">
         <Link to="/signup">Sign up</Link>
       </div>
       
@@ -130,17 +132,8 @@ const Splash = ({ currentUser, logout }) => {
 
 
   <div className="footer">
-    
-
-        <div className="left-footer">500px clone.</div>
-
-        <div className="right-footer">
-          {/* <Link to="/signup"></Link>
-          <Link to="/signup">Sign up</Link> */}
-
-
-        </div>
-    </div>
+      <div className="left-footer">500px clone.</div>
+  </div>
 
 
       
