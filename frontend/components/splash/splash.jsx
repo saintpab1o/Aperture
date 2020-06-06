@@ -51,51 +51,94 @@ const Splash = ({ currentUser, logout }) => {
 
 
       <div className="mid-text-header">What makes us different</div>
-    
-    <div className="mid-text-container">
 
+    <div className="mid-content-container">
     
+    <div className="grow-container">
+
       <div className="mid-text-grow">Grow as a photographer</div>
-      <div className="mid-text-build"> Build your career</div>
-      <div className="mid-text-performance">See how you're performing</div>
-      </div>
-
-     
-
-      <div className="mid-text-sub-container">
 
         <div className="mid-text-grow-sub">
           Get immediate exposure with your first upload.
-          <br></br> 
-          Our Pulse algorithm surfaces new 
+          <br></br>
+          Our Pulse algorithm surfaces new
           <br></br>
           photographs and photographers, ensuring
           <br></br>
-           your photos are seen by the community so you
+          your photos are seen by the community so you
            <br></br>
-            receive valuable feedback on day one.</div>
-
-      <div className="mid-text-build-sub">
-        Present yourself as a professional. Get hired 
-      <br></br>
-        by displaying your services, create a Directory
-      <br></br> 
-      listing, showcase the workshops you're 
-      <br></br>
-      holding, and create Galleries to highlight your 
-      <br></br>
-      work.</div>
-
-      
-      <div className="mid-text-performance-sub">
-        With Statistics and Pulse you get valuable 
-      <br></br>
-      insights into how your photos are performing
-      <br></br>
-       and how you rank in comparison to other 
-      <br></br>photographers in the community.</div>
+          receive valuable feedback on day one.</div>
 
       </div>
+    
+    
+    
+      <div className="build-container">
+
+        <div className="mid-text-build"> Build your career</div>
+
+            <div className="mid-text-build-sub">
+                Present yourself as a professional. Get hired 
+              <br></br>
+                by displaying your services, create a Directory
+              <br></br> 
+              listing, showcase the workshops you're 
+              <br></br>
+              holding, and create Galleries to highlight your 
+              <br></br>
+              work. </div>
+
+      </div>
+    
+
+    
+      <div className="performance-container">
+        
+      <div className="mid-text-performance">See how you're performing</div>
+      
+        <div className="mid-text-performance-sub">
+              With Statistics and Pulse you get valuable 
+            <br></br>
+            insights into how your photos are performing
+            <br></br>
+            and how you rank in comparison to other 
+            <br></br>photographers in the community.</div>
+
+            </div>
+      </div>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+    
+    
+    <div className="mid-signup-container">
+        <div className="mid-signup-container-content">
+
+        
+        
+        <div className="mid-signup-top-text">Join our photography community today</div>
+        <div className="mid-signup-bottom-text">We want fresh, creative talent like you. 
+        Join our global network of like-minded creators to be inspired by incredible 
+       </div>
+        <div className="mid-signup-last-text">photos daily, and get rewarded for your talents.</div>
+
+        <div className="bottom-purp-signup-button">
+          <Link to="/signup">Sign up</Link>
+        </div>
+    </div>
+
+        
+
+    </div>
+
+    </div>
+
+    
+
+    
+  
 
         
 
@@ -105,7 +148,7 @@ const Splash = ({ currentUser, logout }) => {
       
 
 
-    </div>
+   
       
     
   );
