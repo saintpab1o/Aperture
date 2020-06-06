@@ -353,6 +353,7 @@ a:hover {
 }
 
 .left-footer{
+  margin-top: 1%;
 text-indent: 15px;
 display: flex;
 justify-content: flex-start;

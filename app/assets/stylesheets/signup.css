@@ -72,9 +72,8 @@ button:hover {
     border: 1.5px solid black;
     font-weight: bold;
     border-radius: 20px;
-    color:  white;
-    background-color: purple;
     cursor: pointer;
+    color: purple;
 }
 
 
