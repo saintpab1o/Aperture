@@ -1,3 +1,5 @@
+body {margin: 0;}
+
 .splash-nav {
     height: 50px;
     display: flex;
@@ -265,10 +267,10 @@ a:hover {
 }
 
 .mid-signup-container{
+    opacity: 96%;
     background-color: darkslateblue;
     height: 323px;
     width: 100%;
-    opacity: 96%;
 }
 
 .mid-signup-top-text{
@@ -325,3 +327,27 @@ a:hover {
      
  }
  
+
+ .footer{
+  
+ height: 20px;
+  width: 100%;
+  opacity: 96%;
+  background-color: white;
+  
+  
+}
+
+.left-footer{
+text-indent: 15px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+font-family: sans-serif;
+color:grey;
+ font-size: 18px;
+ margin-bottom: 10px;
+ text-align: center;
+
+}
+

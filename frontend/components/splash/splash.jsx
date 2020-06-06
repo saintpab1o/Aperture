@@ -8,9 +8,9 @@ const Splash = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <div>
 
-     <div className="splash-nav-header">
+    <div className="splash-nav-header">
            <Link to="/">Aperture</Link>
-      </div>
+    </div>
            
       <div className="splash-nav">
        
@@ -19,9 +19,7 @@ const Splash = ({ currentUser, logout }) => {
          className= "splash-login">
       <Link to="/login">Log in</Link>
       </div>
-      <br></br>
-      
-
+     
       <div className= "splash-signup">
         <Link to="/signup">Sign up</Link>
       </div>
@@ -128,12 +126,27 @@ const Splash = ({ currentUser, logout }) => {
           <Link to="/signup">Sign up</Link>
         </div>
     </div>
+  </div>
 
-        
 
+  <div className="footer">
+    
+
+        <div className="left-footer">500px clone.</div>
+
+        <div className="right-footer">
+          {/* <Link to="/signup"></Link>
+          <Link to="/signup">Sign up</Link> */}
+
+
+        </div>
     </div>
 
-    </div>
+
+      
+  </div>
+
+
 
     
 
