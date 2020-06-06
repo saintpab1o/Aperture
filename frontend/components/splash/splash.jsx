@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSeedling } from '@fortawesome/free-solid-svg-icons'
+import { faHammer} from '@fortawesome/free-solid-svg-icons'
+import { faChartBar} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -29,7 +33,7 @@ const Splash = ({ currentUser, logout }) => {
       </div>
 
       
-
+      
 
      
         <div  className="splash-img">
@@ -56,7 +60,10 @@ const Splash = ({ currentUser, logout }) => {
     
     <div className="grow-container">
 
+          <div className="icon"><FontAwesomeIcon icon={faSeedling}  /></div>
+
       <div className="mid-text-grow">Grow as a photographer</div>
+
 
         <div className="mid-text-grow-sub">
           Get immediate exposure with your first upload.
@@ -74,6 +81,8 @@ const Splash = ({ currentUser, logout }) => {
     
     
       <div className="build-container">
+
+          <div className="icon"><FontAwesomeIcon icon={faHammer} /></div>
 
         <div className="mid-text-build"> Build your career</div>
 
@@ -94,6 +103,7 @@ const Splash = ({ currentUser, logout }) => {
     
       <div className="performance-container">
         
+          <div className="icon"><FontAwesomeIcon icon={faChartBar} /></div>
       <div className="mid-text-performance">See how you're performing</div>
       
         <div className="mid-text-performance-sub">

@@ -23,6 +23,8 @@
     font-family: sans-serif;
     position: absolute;
     font-weight: lighter;
+    
+    
 }
 
 
@@ -32,6 +34,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 248, 250);
+    
     
    
  }
