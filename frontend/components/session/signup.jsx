@@ -33,7 +33,7 @@ class Signup extends React.Component {
         return (
             <div>
 
-                <div class="signup-text-top">Start Your Journey Today!</div>
+                
 
                 <div className="login-nav-header">
                     <Link to="/">Aperture</Link>
@@ -55,10 +55,16 @@ class Signup extends React.Component {
              </div>
 
                 <div className="outerbox">
+
+                
            
 
            <div
                className="signup-form-container">
+
+                        <div class="signup-text-top">Aperture.</div>
+
+                            <div class="signup-text-bottom">Join us start sharing today!</div>
 
                     <form>
 

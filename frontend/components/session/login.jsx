@@ -46,7 +46,7 @@ class LoginForm extends React.Component {
 
                 <div className="splash-nav">
                 
-                <div class="login-text-top">Log in to Aperture</div>
+               
                 
                 
                 <a className= "splash-login">
@@ -60,6 +60,8 @@ class LoginForm extends React.Component {
              </div>
 
             <div className="outerbox">
+
+                   
            
 
                 <div
@@ -67,6 +69,10 @@ class LoginForm extends React.Component {
                 
                
                     <form>
+
+                            <div class="login-text-top">Log in to Aperture</div>
+
+                            
                         <div 
                             className="username-input">
 

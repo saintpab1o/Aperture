@@ -1,3 +1,10 @@
+.outerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .signup-form-container{
     width: 400px;
     height: 500px;
@@ -10,17 +17,26 @@
     font-family: sans-serif;
     border: .1px hidden lightgrey;
     border-style: solid;
-
 }
 
 .signup-text-top{
      
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 4%;
+    left: 36%;
     font-family: sans-serif;
     z-index: 1;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.signup-text-bottom{
+     
+    position: absolute;
+    top: 12%;
+    left: 27%;
+    font-family: sans-serif;
+    z-index: 1;
+    font-size: 15px;
 }
 
 
@@ -107,9 +123,10 @@ margin-bottom: 5px;
     border-radius: 25px;
     color: white;
     background:rgb(8, 112, 209);
-    margin-top: 10%;
+    margin-top: 8%;
     width: 355px;
     height: 50px;
+    margin-left: 20px;
 
 }
 
@@ -120,7 +137,8 @@ margin-bottom: 5px;
     border-radius: 25px;
     color: white;
     background: #1890ff;
-    margin-top: 10%;
+    
     width: 355px;
     height: 50px;
+    margin-left: 20px;
 }
