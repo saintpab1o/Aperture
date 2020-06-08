@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 class LoginForm extends React.Component {
     constructor(props) {
         super(props)
@@ -10,7 +11,8 @@ class LoginForm extends React.Component {
             username: '',
             password: '',
         }
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleInput(type){
@@ -22,12 +24,19 @@ class LoginForm extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         this.props.login(this.state)
-        
-      
-}
+    }
+
+    handleClick(e) {
+        e.preventDefault();
+        this.props.login(this.props.demoUser)
+    }
+
 
 
     render () {
+
+       
+
         return (
             <div>
 
@@ -37,7 +46,7 @@ class LoginForm extends React.Component {
 
                 <div className="splash-nav">
                 
-                <div class="login-text-top">Log in to Aperture</div>
+               
                 
                 
                 <a className= "splash-login">
@@ -51,6 +60,8 @@ class LoginForm extends React.Component {
              </div>
 
             <div className="outerbox">
+
+                   
            
 
                 <div
@@ -58,6 +69,10 @@ class LoginForm extends React.Component {
                 
                
                     <form>
+
+                            <div class="login-text-top">Log in to Aperture</div>
+
+                            
                         <div 
                             className="username-input">
 
@@ -87,23 +102,47 @@ class LoginForm extends React.Component {
                         </label>
                         </div>
 
-                        <div className="login-button"> 
-                           <button onClick={this.handleSubmit}>Login</button>
+                    <div className="login-button-container">
+                        <div>
+                            <button className="login-button-bottom" onClick={this.handleSubmit}>Login</button>
                         </div>
 
-                        <div className="account-text"> 
-                            Don't have an account? 
+                                               
+                        <div>
+                            <button className='demo-login-button' onClick={this.handleClick}>Demo Login</button>
                         </div>
+
                         
-                        <div className="account-link"> 
-                        <a><Link to="/signup">Sign up</Link></a>
-                        </div>
+                    </div>
+
+                    <div className="login-button-text-container">
+
+                                <div className="login-button-text-sub">
+                                    Don't have an account?  
+                                </div>
+
+
+                                <div id="login-button-text-link">
+                                    <Link to="/signup">Sign up</Link>
+                                </div>
+
+                    </div>
+
+
+                       
+                        
+                       
 
                     </form>
                 </div>
             
 
             </div>
+            <div className="footer">
+                    <div className="left-footer">500px clone.</div>
+                    
+                </div>
+
             </div>
         )
     }

@@ -33,7 +33,7 @@ class Signup extends React.Component {
         return (
             <div>
 
-                <div class="signup-text-top">Start Your Journey Today!</div>
+                
 
                 <div className="login-nav-header">
                     <Link to="/">Aperture</Link>
@@ -55,10 +55,16 @@ class Signup extends React.Component {
              </div>
 
                 <div className="outerbox">
+
+                
            
 
            <div
                className="signup-form-container">
+
+                        <div class="signup-text-top">Aperture.</div>
+
+                            <div class="signup-text-bottom">Join us start sharing today!</div>
 
                     <form>
 
@@ -93,14 +99,23 @@ class Signup extends React.Component {
                         </label>
                         </div>
 
-                        <div id='button1'>
-                            <button onClick={this.handleSubmit}>Sign Up</button>
+                        <div>
+                            <button className="sign-up-button" onClick={this.handleSubmit}>Sign Up</button>
                         </div>
 
                     </form>
 
                     </div>
+
+
                 </div>
+
+                <div className="footer">
+                    <div className="left-footer">500px clone.</div>
+                    
+                </div>
+
+
             </div>
         )
     }
