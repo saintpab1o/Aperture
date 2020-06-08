@@ -172,26 +172,35 @@ const Splash = ({ currentUser, logout }) => {
 const welcomeMessage = () => (
   <div>
 
+    <div className="nav-container"> 
 
-
-    <div className="splash-nav-header">
+      <div className="splash-nav-header">
         <Link to="/">Aperture</Link>
-    </div>
-      
-      <div id='button2'>
-        <button  onClick={logout}>Log Out</button>
       </div>
+      
+      
+
+    </div>
+
+      <div className="logout-button-container">
+
+      <div>
+        <button className="logout-button-top" onClick={logout}>Log Out</button>
+      </div>
+
+    </div>
+
 
       <div className="home-feed-text">
         <h3>Home Feed</h3>
         </div>
 
         <div className="home-feed-text2">
-        <h4>Featured photographers</h4>
+            <h4>Featured photographers</h4>
         </div>
         <div className="home-feed-text3">
-        <p>Find photographers to follow</p>
- </div>
+          <p>Find photographers to follow</p>
+        </div>
 
 
     <div className="footer">
