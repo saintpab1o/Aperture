@@ -129,8 +129,8 @@ a:hover {
     margin-left: 50px;
     font-style: smooth;
     text-shadow: black 0px 0px 3px;
-  
 }
+
 .splash-mini-bottom2{
     font-family: sans-serif;
     position: absolute;
@@ -167,14 +167,7 @@ a:hover {
     
 }
 
-#button2{
-    margin-left: 75%;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 0 16px;
-    height: 30px;
-    font-family: sans-serif;
-}
+
 
 .home-feed-text{
     font-family: sans-serif;
@@ -369,3 +362,46 @@ color:grey;
 
 
 
+
+.logout-button-top{
+ 
+  font-weight: bold;
+    font-size: 15px;
+    padding: 0 14px;
+    color: black;
+    background: white;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+    
+    margin-top: 2%;
+}
+
+.logout-button-top:hover{
+  font-weight: bold;
+    font-size: 15px;
+    padding: 0 14px;
+    color:purple;
+    background: white;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+  
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logout-button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 17px;
+    margin-right: 60px;
+   
+  
+  
+
+}
