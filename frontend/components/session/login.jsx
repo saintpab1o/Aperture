@@ -11,7 +11,8 @@ class LoginForm extends React.Component {
             username: '',
             password: '',
         }
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleInput(type){
@@ -23,12 +24,19 @@ class LoginForm extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         this.props.login(this.state)
-        
-      
-}
+    }
+
+    handleClick(e) {
+        e.preventDefault();
+        this.props.login(this.props.demoUser)
+    }
+
 
 
     render () {
+
+       
+
         return (
             <div>
 
@@ -88,19 +96,36 @@ class LoginForm extends React.Component {
                         </label>
                         </div>
 
-                        <div className="login-button"> 
-                           <button onClick={this.handleSubmit}>Login</button>
+                    <div className="login-button-container">
+                        <div>
+                            <button className="login-button-bottom" onClick={this.handleSubmit}>Login</button>
                         </div>
+
+                                               
+                        <div>
+                            <button className='demo-login-button' onClick={this.handleClick}>Demo Login</button>
+                        </div>
+
+                        
+                    </div>
+
+                    <div className="login-button-text-container">
+
+                                <div className="login-button-text-sub">
+                                    Don't have an account?  
+                                </div>
+
+
+                                <div id="login-button-text-link">
+                                    <Link to="/signup">Sign up</Link>
+                                </div>
+
+                    </div>
+
+
+                       
                         
                        
-
-                        <div className="account-text"> 
-                            Don't have an account? 
-                        </div>
-                        
-                        <div className="account-link"> 
-                        <a><Link to="/signup">Sign up</Link></a>
-                        </div>
 
                     </form>
                 </div>
