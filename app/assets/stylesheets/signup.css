@@ -101,25 +101,26 @@ margin-bottom: 5px;
 }
 
 .sign-up-button{
-     font-size: 20px;
-    margin-top: 8%;
-    margin-left: 37%;
+    font-size: 15px;  
     font-weight: bold;
-    border: 1.5px solid black;
-    border-radius: 20px;
-    color: black;
-    background: white;
+    border: 1.5px;
+    border-radius: 25px;
+    color: white;
+    background:rgb(8, 112, 209);
+    margin-top: 10%;
+    width: 355px;
+    height: 50px;
 
 }
 
 .sign-up-button:hover{
-        font-family: sans-serif;
-    font-size: 20px;
-    margin-top: 8%;
-    margin-left: 37%;
-    border: 1.5px solid black;
+    font-size: 15px;  
     font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    color: purple;
+    border: 1.5px;
+    border-radius: 25px;
+    color: white;
+    background: #1890ff;
+    margin-top: 10%;
+    width: 355px;
+    height: 50px;
 }
