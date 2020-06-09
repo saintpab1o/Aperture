@@ -21,6 +21,10 @@ class LoginForm extends React.Component {
         }
     }
 
+    componentDidMount() {
+        this.props.clearErrors();
+    }
+
     handleSubmit(e){
         e.preventDefault();
         this.props.login(this.state)
@@ -29,6 +33,16 @@ class LoginForm extends React.Component {
     handleClick(e) {
         e.preventDefault();
         this.props.login(this.props.demoUser)
+    }
+
+    renderErrors() {
+        return (
+            <ul className='session-error-list'>
+                {this.props.errors.map((error, i) => (
+                    <li key={`err.${i}`}>{error}</li>
+                ))}
+            </ul>
+        );
     }
 
 
@@ -49,20 +63,23 @@ class LoginForm extends React.Component {
                
                 
                 
-                <a className= "splash-login">
+                <div className= "splash-login">
                     <Link to="/login">Log in</Link>
-                     <br></br>
-                </a>
+                </div>
+               
 
                 <div className= "splash-signup">
-                    <a><Link to="/signup">Sign up</Link></a>
+                    <Link to="/signup">Sign up</Link>
              </div>
              </div>
 
             <div className="outerbox">
 
                    
-           
+                    <div className='session-error-container-login'>
+                        {this.renderErrors()}
+                    </div>
+                    
 
                 <div
                     className="form-container">
@@ -70,7 +87,7 @@ class LoginForm extends React.Component {
                
                     <form>
 
-                            <div class="login-text-top">Log in to Aperture</div>
+                            <div className="login-text-top">Log in to Aperture</div>
 
                             
                         <div 

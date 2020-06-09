@@ -57,6 +57,7 @@
     width: 60%;   
     font-family: sans-serif;
     color: gray;
+   
 }
 
 .signup-password {
@@ -67,30 +68,12 @@
     font-size: 14px;
     font-family: sans-serif;
     color: gray;
+    float: left;
+    
+    
 }
 
-/* button{ 
-    font-family: sans-serif;
-    font-size: 20px;
-    margin-top: 8%;
-    margin-left: 37%;
-    font-weight: bold;
-    border: 1.5px solid black;
-    border-radius: 20px;
-    color: black;
-    background: white;
-}
-button:hover { 
-    font-family: sans-serif;
-    font-size: 20px;
-    margin-top: 8%;
-    margin-left: 37%;
-    border: 1.5px solid black;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    color: purple;
-} */
+
 
 
 
@@ -142,3 +125,25 @@ margin-bottom: 5px;
     height: 50px;
     margin-left: 20px;
 }
+
+
+ .container {
+ 
+  color: red;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-bottom: 53%;
+  z-index: 1;
+  
+}
+
+.spaced{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+
+

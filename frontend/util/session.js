@@ -14,7 +14,7 @@ export const login = user => (
     })
   );
 
-  export const deleteUser = reportId => (
+  export const deleteUser = userId => (
     $.ajax ({
         method: 'DELETE',
         url: `/api/users/${userId}`,

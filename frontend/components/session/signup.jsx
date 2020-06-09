@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 
 
+
 class Signup extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             username: '',
             email: '',
@@ -14,18 +15,32 @@ class Signup extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
+
+
+
     handleInput(type){
         return (e) => {
             this.setState({ [type]: e.target.value}) 
         }
     }
 
+    componentDidMount() {
+        this.props.clearErrors();
+    }
+
     handleSubmit(e){
         e.preventDefault();
         this.props.createNewUser(this.state)
-        
-        
-        
+    }
+    
+    renderErrors() {
+        return (
+            <ul className='spaced'>
+                {this.props.errors.map((error, i) => (
+                    <li key={`err.${i}`}>{error}</li>
+                ))}
+            </ul>
+        );
     }
 
 
@@ -39,34 +54,45 @@ class Signup extends React.Component {
                     <Link to="/">Aperture</Link>
                 </div>
 
-                <div className="splash-nav">
+            <div className="splash-nav">
                 
                
                 
                 
-                <a className= "splash-login">
+                <div className= "splash-login">
                     <Link to="/login">Log in</Link>
-                     <br></br>
-                </a>
+                </div>
+                
 
                 <div className= "splash-signup">
-                    <a><Link to="/signup">Sign up</Link></a>
+                  <Link to="/signup">Sign up</Link>
              </div>
+
              </div>
+
+                
 
                 <div className="outerbox">
 
-                
+                    <div className='container'>
+                        {this.renderErrors()}
+                    </div>
            
 
            <div
+           
                className="signup-form-container">
+
+                      
 
                         <div class="signup-text-top">Aperture.</div>
 
                             <div class="signup-text-bottom">Join us start sharing today!</div>
 
+                        
+
                     <form>
+                            
 
                         <div className="signup-username">
                              <label>Username:
@@ -97,13 +123,19 @@ class Signup extends React.Component {
                                 onChange={this.handleInput('password')}
                             />
                         </label>
+
+                                
+
                         </div>
 
                         <div>
                             <button className="sign-up-button" onClick={this.handleSubmit}>Sign Up</button>
                         </div>
 
+                          
+
                     </form>
+                            
 
                     </div>
 
