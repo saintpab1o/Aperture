@@ -192,6 +192,10 @@ input {
 .session-error-container-login{
     z-index: 5;
     font-family: sans-serif;
+    color: red;
+    margin-bottom: 31%;
+    margin-right: 4%;
+    
 }
 
 

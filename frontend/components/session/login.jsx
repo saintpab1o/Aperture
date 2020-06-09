@@ -21,9 +21,9 @@ class LoginForm extends React.Component {
         }
     }
 
-    // componentDidMount() {
-    //     this.props.clearErrors();
-    // }
+    componentDidMount() {
+        this.props.clearErrors();
+    }
 
     handleSubmit(e){
         e.preventDefault();
@@ -76,7 +76,7 @@ class LoginForm extends React.Component {
             <div className="outerbox">
 
                    
-                    <div className='session-error-container'>
+                    <div className='session-error-container-login'>
                         {this.renderErrors()}
                     </div>
                     

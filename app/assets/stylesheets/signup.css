@@ -143,14 +143,32 @@ margin-bottom: 5px;
     margin-left: 20px;
 }
 
-.session-error-container{
-    font-size: 14px;
-    color: red;
-   font-family: sans-serif;
-    margin-bottom: 53%;
-    align-items: center;
-    margin-right: 4%;
+
+ .container {
  
+color: red;
+  
+  font-family: sans-serif;
+  
+  z-index: 4;
+  font-size: 14px;
+  margin-top: 22%;
+  
+
+}
+
+.spaced{
+display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end
+  
+}
+
+.spaced li{
+    height: 100px;
+   
+
 }
 
 

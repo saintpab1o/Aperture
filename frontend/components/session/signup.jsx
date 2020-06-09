@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 class Signup extends React.Component {
     constructor(props) {
         super(props);
@@ -12,6 +13,10 @@ class Signup extends React.Component {
             password: '',
         }
         this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    componentDidMount() {
+        this.props.clearErrors();
     }
 
 
@@ -28,7 +33,7 @@ class Signup extends React.Component {
     
     renderErrors() {
         return (
-            <ul className='session-errors-li'>
+            <ul className='spaced'>
                 {this.props.errors.map((error, i) => (
                     <li key={`err.${i}`}>{error}</li>
                 ))}
@@ -67,7 +72,7 @@ class Signup extends React.Component {
 
                 <div className="outerbox">
 
-                    <div className='session-error-container'>
+                    <div className='container'>
                         {this.renderErrors()}
                     </div>
            
