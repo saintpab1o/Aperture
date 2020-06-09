@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 class Signup extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             username: '',
             email: '',
@@ -13,6 +13,7 @@ class Signup extends React.Component {
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
+
 
     handleInput(type){
         return (e) => {
@@ -23,9 +24,16 @@ class Signup extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         this.props.createNewUser(this.state)
-        
-        
-        
+    }
+    
+    renderErrors() {
+        return (
+            <ul className='session-error-list'>
+                {this.props.errors.map((error, i) => (
+                    <li key={`err.${i}`}>{error}</li>
+                ))}
+            </ul>
+        );
     }
 
 
@@ -39,19 +47,20 @@ class Signup extends React.Component {
                     <Link to="/">Aperture</Link>
                 </div>
 
-                <div className="splash-nav">
+            <div className="splash-nav">
                 
                
                 
                 
-                <a className= "splash-login">
+                <div className= "splash-login">
                     <Link to="/login">Log in</Link>
-                     <br></br>
-                </a>
+                </div>
+                
 
                 <div className= "splash-signup">
-                    <a><Link to="/signup">Sign up</Link></a>
+                  <Link to="/signup">Sign up</Link>
              </div>
+
              </div>
 
                 <div className="outerbox">
@@ -97,6 +106,9 @@ class Signup extends React.Component {
                                 onChange={this.handleInput('password')}
                             />
                         </label>
+
+                                
+
                         </div>
 
                         <div>
@@ -104,6 +116,9 @@ class Signup extends React.Component {
                         </div>
 
                     </form>
+                            <div className='session-error-container'>
+                                {this.renderErrors()}
+                            </div>
 
                     </div>
 

@@ -49,13 +49,13 @@ class LoginForm extends React.Component {
                
                 
                 
-                <a className= "splash-login">
+                <div className= "splash-login">
                     <Link to="/login">Log in</Link>
-                     <br></br>
-                </a>
+                </div>
+               
 
                 <div className= "splash-signup">
-                    <a><Link to="/signup">Sign up</Link></a>
+                    <Link to="/signup">Sign up</Link>
              </div>
              </div>
 
@@ -70,7 +70,7 @@ class LoginForm extends React.Component {
                
                     <form>
 
-                            <div class="login-text-top">Log in to Aperture</div>
+                            <div className="login-text-top">Log in to Aperture</div>
 
                             
                         <div 
