@@ -20,7 +20,7 @@ export const login = user => (
         url: `/api/users/${userId}`,
       
     })
-)
+  );
   
   export const logout = () => (
     $.ajax({
