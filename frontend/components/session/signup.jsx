@@ -28,7 +28,7 @@ class Signup extends React.Component {
     
     renderErrors() {
         return (
-            <ul className='session-error-list'>
+            <ul className='session-errors-li'>
                 {this.props.errors.map((error, i) => (
                     <li key={`err.${i}`}>{error}</li>
                 ))}
@@ -63,19 +63,29 @@ class Signup extends React.Component {
 
              </div>
 
+                
+
                 <div className="outerbox">
 
-                
+                    <div className='session-error-container'>
+                        {this.renderErrors()}
+                    </div>
            
 
            <div
+           
                className="signup-form-container">
+
+                      
 
                         <div class="signup-text-top">Aperture.</div>
 
                             <div class="signup-text-bottom">Join us start sharing today!</div>
 
+                        
+
                     <form>
+                            
 
                         <div className="signup-username">
                              <label>Username:
@@ -115,10 +125,10 @@ class Signup extends React.Component {
                             <button className="sign-up-button" onClick={this.handleSubmit}>Sign Up</button>
                         </div>
 
+                          
+
                     </form>
-                            <div className='session-error-container'>
-                                {this.renderErrors()}
-                            </div>
+                            
 
                     </div>
 

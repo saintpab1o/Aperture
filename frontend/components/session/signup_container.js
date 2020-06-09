@@ -9,8 +9,8 @@ const mapStateToProps = ({ errors }) => {
   };
 
 const mapDispatchToProps = dispatch => ({
-    createNewUser: formUser => dispatch(createNewUser(formUser)),
-    clearErrors: () => dispatch(clearErrors())
+    createNewUser: user => dispatch(createNewUser(user))
+    // clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Signup)

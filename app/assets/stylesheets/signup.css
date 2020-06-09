@@ -144,6 +144,17 @@ margin-bottom: 5px;
 }
 
 .session-error-container{
+    font-size: 14px;
     color: red;
-    z-index: 5;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 53%;
+    align-items: center;
+    margin-right: 4%;
+    
+    
+    
+  
 }
+
+
