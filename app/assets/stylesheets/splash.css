@@ -9,6 +9,7 @@ body {margin: 0;}
     flex-direction: row;
     align-items: center;
     font-family: sans-serif;
+    max-width: 1400px;
     
 }
 
@@ -22,6 +23,7 @@ body {margin: 0;}
     font-family: sans-serif;
     position: absolute;
     font-weight: lighter;
+    max-width: 1400px;
  
 
 }
@@ -32,6 +34,7 @@ body {margin: 0;}
     
     margin-right: 2%;
     font-weight: bolder;
+    max-width: 1400px;
 
 }
 
@@ -47,6 +50,7 @@ body {margin: 0;}
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    max-width: 1400px;
 
 }
 
@@ -400,8 +404,8 @@ color:grey;
     justify-content: flex-end;
     margin-top: 17px;
     margin-right: 60px;
-   
-  
-  
+}
 
+.splash-img{
+  width: auto;
 }
