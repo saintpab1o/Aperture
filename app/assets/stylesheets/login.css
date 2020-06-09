@@ -189,6 +189,11 @@ input {
 }
 
 
+.session-error-container-login{
+    z-index: 5;
+    font-family: sans-serif;
+}
+
 
  
   
