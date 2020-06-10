@@ -7,7 +7,7 @@ class UploadForm extends React.Component {
         this.state = {
             caption: '',
             location: '',
-            photographer_id: this.props.currentUser,
+            photographerId: this.props.currentUserId,
             photoFile: null,
             photoURL: null,
         }
@@ -37,7 +37,7 @@ class UploadForm extends React.Component {
         const formData = new FormData();
         formData.append('photo[caption]', this.state.caption);
         formData.append('photo[location]', this.state.location);
-        formData.append('photo[photographer_id]', this.state.photographer_id);
+        formData.append('photo[photographer_id]', this.state.photographerId);
         if (this.state.photoFile) {
             formData.append('photo[photo]', this.state.photoFile);
         }
