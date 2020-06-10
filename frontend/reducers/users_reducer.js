@@ -15,7 +15,6 @@ const usersReducer = (state = {}, action) => {
     case RECEIVE_ALL_PHOTOS:
       return Object.assign({}, state, action.users)
 
-
     default:
       return state;
   }

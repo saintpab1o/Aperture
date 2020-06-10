@@ -155,10 +155,8 @@ class LoginForm extends React.Component {
             
 
             </div>
-            <div className="footer">
-                    <div className="left-footer">500px clone.</div>
-                    
-                </div>
+
+         
 
             </div>
         )

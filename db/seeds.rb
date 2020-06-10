@@ -9,11 +9,7 @@
 User.destoy_all
 
 
-<<<<<<< HEAD
 demo_user = User.create(username: "pm", password: "password" email:"test@test.com")
 
 
 
-=======
-demo_user = User.create(username: "pm", password: "password" email:"test@test.com")
->>>>>>> auth
