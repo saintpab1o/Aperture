@@ -28,7 +28,7 @@ class Photo < ApplicationRecord
     foreign_key: :liker_id,
     class_name: :Like
 
-    has_one_attached :image
+    has_one_attached :photo
 
 
 

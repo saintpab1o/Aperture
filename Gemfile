@@ -28,7 +28,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem "aws-sdk-s3"
+gem 'aws-sdk-s3'
+
+
 
 
 # Use ActiveStorage variant

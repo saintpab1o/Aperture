@@ -27,5 +27,5 @@ export const getPhotos = () => dispatch => PhotoUtil.fetchPhotos()
 export const getPhoto = (id) => dispatch => PhotoUtil.fetchPhoto(id)
     .then(photo => dispatch(receivePhoto(photo)))
 
-export const createPhoto = (data) => dispatch => PhotoUtil.createPhoto(data)
+export const createPhoto = (formData) => dispatch => PhotoUtil.createPhoto(formData)
     .then(photo => dispatch(receivePhoto(photo)));

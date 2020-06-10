@@ -2,7 +2,7 @@ class Api::PhotosController < ApplicationController
 
     def index
         @photos = Photo.all
-        render: index
+        render :index
     end
 
     def create
