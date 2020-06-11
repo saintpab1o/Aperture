@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'aws-sdk-s3'
 
+gem 'pristine aws-sdk-s3'
 
 
 
