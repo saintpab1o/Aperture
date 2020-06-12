@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class UploadForm extends React.Component {
@@ -48,10 +49,52 @@ class UploadForm extends React.Component {
 
 
     render() {
+
+        
         console.log(this.state);
         const preview = this.state.photoUrl ? <img src={this.state.photoUrl} /> : null;
         return (
+
+
+         <div>
+
+
+                <div className="nav-container"> 
+
+                <div className="login-nav-header">
+                    <Link to="/">Aperture</Link>
+                </div>
+
+
+        </div>
+
+       
+            <div className="logout-button-container">
+
+                <div>
+                    <button className="logout-button-top1" onClick={this.props.logout}>Log Out</button>
+                </div>
+            </div>
+
+
+
+            
+
+
+        <div className="outerbox-upload">
+             
+    
+            <div className="upload-form-container"> 
+
+         
+
+                    <div className="login-text-top">Upload Photos</div>
+
+
+
             <form onSubmit={this.handleSubmit.bind(this)}>
+
+        <div className="upload-text-container">
                
                 <label className='photo-caption-text'>Caption:
                     <input type='text'
@@ -69,13 +112,46 @@ class UploadForm extends React.Component {
                 </label>
 
                 
-                <input type="file"
+           
 
-                    onChange={this.handleFile.bind(this)} />
-                <h3>Image preview </h3>
+                            <div>
+
+
+                                <label className="file-button">
+
+                                    <input type="file"
+
+
+
+                                        onChange={this.handleFile.bind(this)} />
+                                </label>
+
+                            </div>
+
+                <h3></h3>
                 {preview}
-                <button>Upload</button>
+
+                                <div>
+                                    <button className="upload-button-bottom" onClick={this.handleSubmit}>Upload</button>
+                                </div>
+
+         </div>       
+
+
+                
+
+
+
+
             </form>
+        </div>
+
+     </div>
+
+
+
+
+    </div>      
         );
     }
 }

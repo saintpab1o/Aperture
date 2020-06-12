@@ -184,9 +184,14 @@ const welcomeMessage = () => (
 
       <div className="logout-button-container">
 
+      <div className="upload-button-top">
+        <Link to="/upload">Upload</Link>
+      </div>
+
       <div>
         <button className="logout-button-top" onClick={logout}>Log Out</button>
       </div>
+
 
     </div>
 
@@ -201,6 +206,48 @@ const welcomeMessage = () => (
         <div className="home-feed-text3">
           <p>Find photographers to follow</p>
         </div>
+
+
+  <div className="stock-images">
+
+
+    <div className="splash-img-center">
+      <img src={window.stock4} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock5} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock3} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock2} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock1} alt="splash-img" width="450" height="450"></img>
+    </div>
+
+    </div>
 
 
     <div className="footer">

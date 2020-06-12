@@ -176,7 +176,7 @@ a:hover {
 .home-feed-text{
     font-family: sans-serif;
     
-    margin-top: 6%;
+    margin-top: 3%;
     margin-left: 5%;
     font-size: 28px;
  
@@ -365,6 +365,29 @@ color:grey;
 }
 
 
+.logout-button-container{
+    display: flex;
+    justify-content: flex-end;
+    
+    margin-top: 17px;
+    margin-right: 60px;
+}
+
+.upload-button-top{
+  font-weight: bold;
+    font-size: 15px;
+    padding: 0 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    max-width: 1400px;
+    
+
+}
+
+
+
 
 
 .logout-button-top{
@@ -399,13 +422,13 @@ color:grey;
   justify-content: flex-start;
 }
 
-.logout-button-container{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 17px;
-    margin-right: 60px;
-}
 
-.splash-img{
-  width: auto;
+.stock-images{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30%;
+  
+  
+  
 }
