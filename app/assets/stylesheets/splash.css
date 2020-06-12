@@ -423,12 +423,17 @@ color:grey;
 }
 
 
-.stock-images{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 30%;
+
+.stock-images-container{
+  margin-left: 28%;
+  margin-top: 2%;
+}
+
+.splash-img-center{
+  border: 10px solid black;
+  height: 450px;
+  width: 450px;
+
   
-  
-  
+
 }

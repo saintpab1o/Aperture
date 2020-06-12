@@ -23,15 +23,29 @@ class UploadForm extends React.Component {
     }
 
     handleFile(e) {
-        const file = e.currentTarget.files[0];
+        const file = e.target.files[0];
         const fileReader = new FileReader();
         fileReader.onloadend = () => {
-            this.setState({ photoFile: file, photoURL: fileReader.result });
+            this.setState({ photoFile: file, photoUrl: fileReader.result });
         };
         if (file) {
             fileReader.readAsDataURL(file);
         }
-    }
+    };
+
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('photo[title]', this.state.title);
+        formData.append('photo[description]', this.state.description);
+        formData.append('photo[photo]', this.state.photoFile);
+        formData.append('photo[photographer_id]', this.props.currentUser.id);
+        this.props.uploadPhoto(formData).then(() => (
+            this.props.history.push(`/users/${this.props.currentUser.id}`))
+        );
+    };
+
 
     handleSubmit(e) {
         e.preventDefault();
@@ -39,11 +53,11 @@ class UploadForm extends React.Component {
         formData.append('photo[caption]', this.state.caption);
         formData.append('photo[location]', this.state.location);
         formData.append('photo[photographer_id]', this.state.photographerId);
-        if (this.state.photoFile) {
-            formData.append('photo[photo]', this.state.photoFile);
-        }
-        this.props.createPhoto(formData).then(() => this.props.history.push('/'))
-    }
+        formData.append('photo[photo]', this.state.photoFile);
+        this.props.createPhoto(formData).then(() => (
+            this.props.history.push(`/users/${this.props.currentUser.id}`))
+        );
+    };
 
 
 
@@ -52,7 +66,7 @@ class UploadForm extends React.Component {
 
         
         console.log(this.state);
-        const preview = this.state.photoUrl ? <img src={this.state.photoUrl} /> : null;
+        const preview = this.state.photoUrl ? <img className='image-preview' src={this.state.photoUrl} /> : <img className='image-preview' height='150px' width='150px' />;
         return (
 
 
@@ -126,10 +140,13 @@ class UploadForm extends React.Component {
                                         onChange={this.handleFile.bind(this)} />
                                 </label>
 
+                                    {preview}
+
                             </div>
 
-                <h3></h3>
-                {preview}
+                
+
+               
 
                                 <div>
                                     <button className="upload-button-bottom" onClick={this.handleSubmit}>Upload</button>
