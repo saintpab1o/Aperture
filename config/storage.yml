@@ -12,7 +12,7 @@ amazon_prod:
   secret_access_key:
     <%= Rails.application.credentials.aws[:secret_access_key] %>
   region: <%= Rails.application.credentials.aws[:region] %>
-  bucket: <%= Rails.application.credentials.aws[:prod][:bucket] %>c
+  bucket: <%= Rails.application.credentials.aws[:prod][:bucket] %>
 
 
 
