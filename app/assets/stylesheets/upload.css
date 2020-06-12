@@ -27,9 +27,9 @@
 .upload-form-container{
     z-index: 1;
        width: 400px;
-    height: 554px;
+    height: 750px;
     background-color: white;  
-    top: 57%;
+    top: 67%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -41,7 +41,7 @@
 }
 
 .outerbox-upload{
-    min-height: 640px;
+    min-height: 1000px;
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 248, 250);

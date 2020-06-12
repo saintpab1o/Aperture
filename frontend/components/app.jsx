@@ -14,10 +14,11 @@ const App = () => (
   <div>
  
     <Route exact path="/" component={SplashContainer} />
+    <Route exact path='/photos' component={PhotoFeedContainer} />
     <AuthRoute exact path="/login" component={LoginContainer} /> 
     <AuthRoute path="/signup" component={SignupContainer} />
     <ProtectedRoute path='/upload' component={UploadFormContainer} />
-    <Route exact path='/discover' component={PhotoFeedContainer} />
+    
 
 
   </div>

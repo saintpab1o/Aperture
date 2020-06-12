@@ -208,6 +208,12 @@ const welcomeMessage = () => (
         </div>
 
 
+
+
+<div className="stock-images-container">
+
+
+
   <div className="stock-images">
 
 
@@ -247,12 +253,13 @@ const welcomeMessage = () => (
       <img src={window.stock1} alt="splash-img" width="450" height="450"></img>
     </div>
 
+      </div>
+
     </div>
 
 
     <div className="footer">
       <div className="left-footer">500px clone.</div>
-
     </div>
       
     </div>

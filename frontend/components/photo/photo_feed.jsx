@@ -7,13 +7,15 @@ class PhotoFeed extends React.Component {
     }
 
     componentDidMount() {
-        this.props.getPhotos();
+        this.props.fetchPhotos();
     }
 
     render() {
-        const photo = this.props.photos.map(photo => <PhotoIndexItem key={`photo.${photo.id}`} photo={photo} />)
+        const photo = this.props.photos.map(photo => (
+            <PhotoIndexItem key={photo.id} photo={photo} />
+        ));
         return (
-            <div className='photo-container'>
+            <div className='photo-feed'>
                 {photo}
             </div>
         )
