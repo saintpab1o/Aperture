@@ -5,8 +5,9 @@ import UploadForm from './upload_form';
 
 
 const mapStateToProps = state => {
+    
     return ({
-        currentUser: state.entities.users[state.session.id]
+        currentUserId: state.session.currentUser.id
     })
 }
 

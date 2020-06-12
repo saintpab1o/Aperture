@@ -33,18 +33,10 @@ class UploadForm extends React.Component {
         }
     };
 
+ 
 
-    handleSubmit(e) {
-        e.preventDefault();
-        const formData = new FormData();
-        formData.append('photo[title]', this.state.title);
-        formData.append('photo[description]', this.state.description);
-        formData.append('photo[photo]', this.state.photoFile);
-        formData.append('photo[photographer_id]', this.props.currentUser.id);
-        this.props.uploadPhoto(formData).then(() => (
-            this.props.history.push(`/users/${this.props.currentUser.id}`))
-        );
-    };
+
+
 
 
     handleSubmit(e) {
@@ -54,9 +46,12 @@ class UploadForm extends React.Component {
         formData.append('photo[location]', this.state.location);
         formData.append('photo[photographer_id]', this.state.photographerId);
         formData.append('photo[photo]', this.state.photoFile);
-        this.props.createPhoto(formData).then(() => (
-            this.props.history.push(`/users/${this.props.currentUser.id}`))
-        );
+        debugger
+        const cuid = this.props.currentUserId
+        this.props.createPhoto(formData).then((photo) => {
+            // debugger
+            return this.props.history.push(`/users/${cuid}`)
+        });
     };
 
 
