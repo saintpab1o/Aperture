@@ -50,7 +50,7 @@ class UploadForm extends React.Component {
         const cuid = this.props.currentUserId
         this.props.createPhoto(formData).then((photo) => {
             // debugger
-            return this.props.history.push(`/users/${cuid}`)
+            return this.props.history.push(`/photos`)
         });
     };
 
