@@ -87,7 +87,7 @@ class Signup extends React.Component {
 
                         <div class="signup-text-top">Aperture.</div>
 
-                            <div class="signup-text-bottom">Join us start sharing today!</div>
+                            <div class="signup-text-bottom">Join us and start sharing today!</div>
 
                         
 
