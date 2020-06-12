@@ -1,8 +1,8 @@
-.form-container {
+.form-container1 {
     width: 400px;
     height: 554px;
     background-color: white;  
-    top: 65%;
+    top: 57%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
