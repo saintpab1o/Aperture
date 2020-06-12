@@ -82,7 +82,7 @@ class LoginForm extends React.Component {
                     
 
                 <div
-                    className="form-container">
+                    className="form-container1">
                 
                
                     <form>
