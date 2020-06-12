@@ -208,6 +208,48 @@ const welcomeMessage = () => (
         </div>
 
 
+  <div className="stock-images">
+
+
+    <div className="splash-img-center">
+      <img src={window.stock4} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock5} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock3} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock2} alt="splash-img" width="450" height="450"></img>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="splash-img-center">
+      <img src={window.stock1} alt="splash-img" width="450" height="450"></img>
+    </div>
+
+    </div>
+
+
     <div className="footer">
       <div className="left-footer">500px clone.</div>
 

@@ -176,7 +176,7 @@ a:hover {
 .home-feed-text{
     font-family: sans-serif;
     
-    margin-top: 6%;
+    margin-top: 3%;
     margin-left: 5%;
     font-size: 28px;
  
@@ -423,6 +423,12 @@ color:grey;
 }
 
 
-.splash-img{
-  width: auto;
+.stock-images{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30%;
+  
+  
+  
 }

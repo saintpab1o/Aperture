@@ -13,7 +13,4 @@ const mapDispatchToProps = dispatch => ({
   getPhotos: () => dispatch(getPhotos())
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Splash);
+export default connect(mapStateToProps,mapDispatchToProps)(Splash);

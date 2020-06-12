@@ -1,0 +1,93 @@
+.logout-button-top1{
+
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 14px;
+    color: black;
+    background: white;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+    margin-top: 2%;
+    
+}
+.logout-button-top1:hover{
+
+  font-weight: bold;
+    font-size: 15px;
+    padding: 0 14px;
+    color:purple;
+    background: white;
+    height: 30px;
+    border-radius: 16px;
+    border: 1.5px solid black;
+  
+}
+
+.upload-form-container{
+    z-index: 1;
+       width: 400px;
+    height: 554px;
+    background-color: white;  
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: .1px hidden lightgrey;
+    border-style: solid;
+
+}
+
+.outerbox-upload{
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 248, 250);
+    margin-top: 1%;
+
+}
+
+
+.upload-text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 4%;
+
+}
+
+.file-button{
+  font-family: sans-serif;
+
+}
+
+
+.upload-button-bottom{
+    font-size: 15px;  
+    font-weight: bold;
+    border: 1.5px;
+    border-radius: 25px;
+    color: white;
+    background:rgb(8, 112, 209);
+    margin-top: 8%;
+    width: 355px;
+    height: 50px;
+
+}
+
+.upload-button-bottom:hover {
+    font-size: 15px;  
+    font-weight: bold;
+    border: 1.5px;
+    border-radius: 25px;
+    color: white;
+    background: #1890ff;
+    margin-top: 8%;
+    width: 355px;
+    height: 50px;
+}
+
+
