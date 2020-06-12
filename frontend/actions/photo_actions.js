@@ -3,23 +3,16 @@ import * as PhotoUtil from '../util/photo';
 export const RECEIVE_ALL_PHOTOS = 'RECEIVE_ALL_PHOTOS';
 export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
 
-const receiveAllPhotos = photo => {
-    const { photos, users } = photo;
-    return ({
-        type: RECEIVE_ALL_PHOTOS,
-        photos,
-        users
-    })
-};
+export const receiveAllPhotos = data => ({
+    type: RECEIVE_ALL_PHOTOS,
+    data
+});
 
-const receivePhoto = photo => {
-    const { photos, users } = photo;
-    return ({
-        type: RECEIVE_PHOTO,
-        photos,
-        users
-    })
-};
+export const receivePhoto = data => ({
+    type: RECEIVE_PHOTO,
+    data
+});
+
 
 export const getPhotos = () => dispatch => PhotoUtil.fetchPhotos()
     .then(photos => dispatch(receiveAllPhotos(photos)))

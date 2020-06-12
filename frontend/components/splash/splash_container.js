@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { getPhotos } from '../../actions/photo_actions';
 
 import { logout } from '../../actions/session_actions';
 import Splash from './splash';
@@ -8,7 +9,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
+  logout: () => dispatch(logout()),
+  getPhotos: () => dispatch(getPhotos())
 });
 
 export default connect(

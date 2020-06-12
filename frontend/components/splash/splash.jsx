@@ -184,9 +184,14 @@ const welcomeMessage = () => (
 
       <div className="logout-button-container">
 
+      <div className="upload-button-top">
+        <Link to="/upload">Upload</Link>
+      </div>
+
       <div>
         <button className="logout-button-top" onClick={logout}>Log Out</button>
       </div>
+
 
     </div>
 
