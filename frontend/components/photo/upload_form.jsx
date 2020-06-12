@@ -82,13 +82,19 @@ class UploadForm extends React.Component {
 
         </div>
 
-       
-            <div className="logout-button-container">
+                <div className="logout-button-container">
 
-                <div>
-                    <button className="logout-button-top1" onClick={this.props.logout}>Log Out</button>
+                    <div className="upload-button-top">
+                        <Link to="/upload">Upload</Link>
+                    </div>
+
+                    <div>
+                        <button className="logout-button-top1" onClick={this.props.logout}>Log Out</button>
+                    </div>
                 </div>
-            </div>
+
+       
+           
 
 
 
