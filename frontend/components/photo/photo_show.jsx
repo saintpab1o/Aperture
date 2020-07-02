@@ -20,12 +20,7 @@ class PhotoShow extends React.Component {
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId);
         
-        
     };
-
-
-
-
 
     render() {
         // console.log(Object.entries())
@@ -35,7 +30,7 @@ class PhotoShow extends React.Component {
             <div>
                 <div className="photo-feed">
                     <div className="photo">
-                        <img className='photo-feed-item' src={Object.entries(this.props.photos)} />
+                        {/* <img className='photo-feed-item' src={} /> */}
                     </div>
                 </div>
             </div>
