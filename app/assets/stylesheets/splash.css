@@ -3,9 +3,27 @@ body {margin: 0;}
 .splash-img{
    
  background-size: cover;
- 
- 
+}
 
+.brand-container{
+display: flex;
+align-items: center;
+margin-left: 5%;
+
+
+}
+.brand-icon{
+  
+  font-size: 25px;
+  margin-left: 120%;
+  margin-right: 120%;
+}
+
+.brand-icon:hover{
+  color: purple;
+  font-size: 27px;
+  margin-left: 120%;
+  margin-right: 120%;
 }
 
 .splash-nav {

@@ -4,6 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSeedling } from '@fortawesome/free-solid-svg-icons'
 import { faHammer} from '@fortawesome/free-solid-svg-icons'
 import { faChartBar} from '@fortawesome/free-solid-svg-icons'
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faAngellist} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+
+
+
+
+
 
 
 
@@ -12,15 +20,28 @@ const Splash = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <div>
 
-    <div className="splash-nav-header">
-           <Link to="/">Aperture</Link>
+     <div className="splash-nav-header">
+       
+        <div className="aperture-header">
+             <Link to="/">Aperture</Link>
+        </div>
+             
+        <div className="brand-container">
+          <div className="brand-icon"><FontAwesomeIcon icon={faLinkedin} /> </div>
+            <div className="brand-icon"><FontAwesomeIcon icon={faGithub} /> </div>
+           
+            <div className="brand-icon"><FontAwesomeIcon icon={faAngellist} /> </div>
+           
+        </div>
     </div>
            
       <div className="splash-nav">
+        
+       
        
       
       <div
-         className= "splash-login">
+         className="splash-login">
       <Link to="/login">Log in</Link>
       </div>
      
@@ -61,6 +82,7 @@ const Splash = ({ currentUser, logout }) => {
     <div className="grow-container">
 
           <div className="icon"><FontAwesomeIcon icon={faSeedling}  /></div>
+         
 
       <div className="mid-text-grow">Grow as a photographer</div>
 
@@ -83,6 +105,8 @@ const Splash = ({ currentUser, logout }) => {
       <div className="build-container">
 
           <div className="icon"><FontAwesomeIcon icon={faHammer} /></div>
+          
+         
 
         <div className="mid-text-build"> Build your career</div>
 
