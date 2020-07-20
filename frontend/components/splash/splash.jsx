@@ -27,10 +27,13 @@ const Splash = ({ currentUser, logout }) => {
         </div>
              
         <div className="brand-container">
-          <div className="brand-icon"><FontAwesomeIcon icon={faLinkedin} /> </div>
-            <div className="brand-icon"><FontAwesomeIcon icon={faGithub} /> </div>
+          
+          <div className="brand-icon">  <Link to="https://www.linkedin.com/in/paulmagioncalda/"> <FontAwesomeIcon icon={faLinkedin} /></Link>  </div>
+          <div className="brand-icon">  <Link to="https://github.com/saintpab1o"> <FontAwesomeIcon icon={faGithub} /></Link>  </div>
+          <div className="brand-icon">  <Link to="https://angel.co/u/paul-magioncalda"> <FontAwesomeIcon icon={faAngellist} /></Link>  </div>
+          
            
-            <div className="brand-icon"><FontAwesomeIcon icon={faAngellist} /> </div>
+
            
         </div>
     </div>
