@@ -1,5 +1,13 @@
 body {margin: 0;}
 
+.splash-img{
+   
+ background-size: cover;
+ 
+ 
+
+}
+
 .splash-nav {
     height: 50px;
     padding: 8px 64px;
@@ -429,11 +437,3 @@ color:grey;
   margin-top: 2%;
 }
 
-.splash-img-center{
-  border: 10px solid black;
-  height: 450px;
-  width: 450px;
-
-  
-
-}

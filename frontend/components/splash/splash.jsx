@@ -37,7 +37,7 @@ const Splash = ({ currentUser, logout }) => {
 
      
         <div  className="splash-img">
-        <img src={window.splashURL} alt="splash-img" width="1400" height="600"></img>
+        <img src={window.splashURL} alt="splash-img" width="100%" height="100%"></img>
         </div>
 
             <div className="splash-text-top">Discover and share</div>
