@@ -48,6 +48,7 @@ class Signup extends React.Component {
         return (
             <div>
 
+                <div className="login-header-container">
                 
 
                 <div className="login-nav-header">
@@ -69,6 +70,8 @@ class Signup extends React.Component {
              </div>
 
              </div>
+
+            </div>
 
                 
 
