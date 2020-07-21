@@ -7,7 +7,7 @@
 
 .signup-form-container{
     width: 400px;
-    height: 500px;
+    height: 550px;
     background-color: white;  
     top: 53%;
     left: 50%;
@@ -132,7 +132,7 @@ margin-bottom: 5px;
   color: red;
   font-family: sans-serif;
   font-size: 14px;
-  margin-bottom: 53%;
+  
   z-index: 1;
   
 }

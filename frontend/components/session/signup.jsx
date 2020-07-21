@@ -74,9 +74,7 @@ class Signup extends React.Component {
 
                 <div className="outerbox">
 
-                    <div className='container'>
-                        {this.renderErrors()}
-                    </div>
+                  
            
 
            <div
@@ -124,7 +122,9 @@ class Signup extends React.Component {
                             />
                         </label>
 
-                                
+                                <div className='container'>
+                                    {this.renderErrors()}
+                                </div>
 
                         </div>
 
