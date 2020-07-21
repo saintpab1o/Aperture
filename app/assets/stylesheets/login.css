@@ -3,7 +3,7 @@
 
 .form-container1 {
     width: 400px;
-    height: 554px;
+    height: 565px;
     background-color: white;  
   
     
@@ -72,7 +72,7 @@
 
 .login-button{
     border: black;
-    border-radius: 20px;
+    
     margin-left: 7%;
     margin-top: 1.5%; 
  
@@ -135,7 +135,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: sticky;
+   
 }
 
 .demo-login-button{
@@ -188,10 +188,12 @@ input {
 
 
 .session-error-container-login{
-    display: block;
+    
+   margin-top: -5%;
     z-index: 5;
     font-family: sans-serif;
     color: red;
+    
   
     
     

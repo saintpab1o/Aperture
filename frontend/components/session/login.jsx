@@ -77,10 +77,14 @@ class LoginForm extends React.Component {
              </div>
              </div>
 
+
+              
+
+
             <div className="outerbox">
 
                    
-                  
+                    
                     
 
             <div
@@ -103,7 +107,9 @@ class LoginForm extends React.Component {
                                     onChange={this.handleInput('username')}
                             />
                             </label>
+                            
                         </div>
+                          
 
                         <br></br>
 
@@ -119,13 +125,18 @@ class LoginForm extends React.Component {
                                 onChange={this.handleInput('password')}
                             />
                         </label>
+
+                              
+                            
                         
                         </div>
 
                             <div className='session-error-container-login'>
                                 {this.renderErrors()}
                             </div>
-                        
+
+                           
+            <div className="bottom-form-container">
 
                     <div className="login-button-container">
                         <div>
@@ -153,6 +164,8 @@ class LoginForm extends React.Component {
 
                                 </div>
 
+                 </div>
+
                     </div>
 
 
@@ -164,6 +177,7 @@ class LoginForm extends React.Component {
 
             </div>
             
+                  
 
             </div>
 
