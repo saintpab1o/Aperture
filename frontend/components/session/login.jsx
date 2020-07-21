@@ -54,11 +54,13 @@ class LoginForm extends React.Component {
         return (
             <div>
 
-                <div className="login-nav-header">
-                    <Link to="/">Aperture</Link>
-                </div>
+                <div className="login-header-container">
 
-                <div className="splash-nav">
+                    <div className="login-nav-header">
+                    <Link to="/">Aperture</Link>
+                    </div>
+
+                     <div className="splash-nav">
                 
                
                 
@@ -70,19 +72,19 @@ class LoginForm extends React.Component {
 
                 <div className= "splash-signup">
                     <Link to="/signup">Sign up</Link>
+                </div>
+
              </div>
              </div>
 
             <div className="outerbox">
 
                    
-                    <div className='session-error-container-login'>
-                        {this.renderErrors()}
-                    </div>
+                  
                     
 
-                <div
-                    className="form-container1">
+            <div
+                className="form-container1">
                 
                
                     <form>
@@ -117,7 +119,13 @@ class LoginForm extends React.Component {
                                 onChange={this.handleInput('password')}
                             />
                         </label>
+                        
                         </div>
+
+                            <div className='session-error-container-login'>
+                                {this.renderErrors()}
+                            </div>
+                        
 
                     <div className="login-button-container">
                         <div>
@@ -130,7 +138,7 @@ class LoginForm extends React.Component {
                         </div>
 
                         
-                    </div>
+                    
 
                     <div className="login-button-text-container">
 
@@ -143,6 +151,8 @@ class LoginForm extends React.Component {
                                     <Link to="/signup">Sign up</Link>
                                 </div>
 
+                                </div>
+
                     </div>
 
 
@@ -152,7 +162,7 @@ class LoginForm extends React.Component {
 
                     </form>
 
-                </div>
+            </div>
             
 
             </div>

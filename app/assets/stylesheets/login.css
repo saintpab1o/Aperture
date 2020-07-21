@@ -1,15 +1,17 @@
+
+
+
 .form-container1 {
     width: 400px;
     height: 554px;
     background-color: white;  
-    top: 53%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+  
+    
+   
     box-sizing: border-box;
     font-family: sans-serif;
     border: .1px hidden lightgrey;
-    border-style: solid;
+    border-style: solid; 
     
 }
 
@@ -27,9 +29,7 @@
     
 }
 
-#demo-login-button{
-    margin-right: 5%;
-}
+
 
 
 
@@ -135,6 +135,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: sticky;
 }
 
 .demo-login-button{
@@ -150,7 +151,7 @@
 }
 
 .demo-login-button:hover {
-        font-size: 15px;  
+    font-size: 15px;  
     font-weight: bold;
     border: 1.5px;
     border-radius: 25px;
@@ -167,7 +168,8 @@
     flex-direction: row;
     justify-content: center;
     font-family: sans-serif;
-    margin-top: 8%;
+    margin-top: 4%;
+    
 }
 
 #login-button-text-link{
@@ -186,11 +188,14 @@ input {
 
 
 .session-error-container-login{
+    display: block;
     z-index: 5;
     font-family: sans-serif;
     color: red;
-    margin-bottom: 31%;
-    margin-right: 4%;
+  
+    
+    
+   
     
 }
 
