@@ -50,7 +50,7 @@ class UploadForm extends React.Component {
         const cuid = this.props.currentUserId
         this.props.createPhoto(formData).then(() => {
             
-            return this.props.history.push('/photos')
+            return this.props.history.push('/')
         });
     };
 
@@ -60,7 +60,7 @@ class UploadForm extends React.Component {
     render() {
 
         
-        console.log(this.state);
+        // console.log(this.state);
         const preview = this.state.photoUrl ? <img className='image-preview' src={this.state.photoUrl} /> : <img className='image-preview' height='150px' width='150px' />;
         return (
 

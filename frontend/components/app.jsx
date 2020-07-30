@@ -4,8 +4,9 @@ import SplashContainer from './splash/splash_container'
 import LoginContainer from './session/login_container'
 import UploadFormContainer from './photo/upload_form_container'
 import PhotoFeedContainer from './photo/photo_feed_container'
+import { Switch } from 'react-router-dom'
 
-import {Route} from 'react-router-dom'
+import {Route,} from 'react-router-dom'
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
 
@@ -13,14 +14,22 @@ import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 const App = () => (
   <div>
  
-    <Route exact path="/" component={SplashContainer} />
+   
+    <Switch>
+        <Route exact path="/" component={SplashContainer} />
+        
+        <ProtectedRoute exact path='/home' component={PhotoFeedContainer} />
+        <ProtectedRoute exact path='/upload' component={UploadFormContainer} />
 
-    <ProtectedRoute exact path='/photos' component={PhotoFeedContainer} />
+        <AuthRoute exact path="/login" component={LoginContainer} />
+        <AuthRoute path="/signup" component={SignupContainer} />
+      </Switch>
+     
+  
 
-    <AuthRoute exact path="/login" component={LoginContainer} /> 
-    <AuthRoute path="/signup" component={SignupContainer} />
+   
+
     
-    <ProtectedRoute path='/upload' component={UploadFormContainer} />
     
 
 
