@@ -55,7 +55,6 @@ class PhotoFeed extends React.Component {
                 
                 
                 <div className='photo'>
-
                     {photo}
                 </div>
 

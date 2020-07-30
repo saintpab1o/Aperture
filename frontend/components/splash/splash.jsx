@@ -244,7 +244,7 @@ const welcomeMessage = () => (
   <div className="stock-images">
 
 
-    <div className="splash-img-center">
+    {/* <div className="splash-img-center">
       <img src={window.stock4} alt="splash-img" width="450" height="450"></img>
     </div>
     <br></br>
@@ -278,7 +278,7 @@ const welcomeMessage = () => (
 
     <div className="splash-img-center">
       <img src={window.stock1} alt="splash-img" width="450" height="450"></img>
-    </div>
+    </div> */}
 
       </div>
 
