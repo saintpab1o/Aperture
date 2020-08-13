@@ -45,9 +45,9 @@ class SplashPage extends React.Component {
         
         <div className="brand-container">
 
-          <div className="brand-icon">  <Link to="https://www.linkedin.com/in/paulmagioncalda/"> <FontAwesomeIcon icon={faLinkedin} /></Link>  </div>
-          <div className="brand-icon">  <Link to="https://github.com/saintpab1o"> <FontAwesomeIcon icon={faGithub} /></Link>  </div>
-          <div className="brand-icon">  <Link to="https://angel.co/u/paul-magioncalda"> <FontAwesomeIcon icon={faAngellist} /></Link>  </div>
+          <div className="brand-icon">  <a href="https://www.linkedin.com/in/paulmagioncalda/"> <FontAwesomeIcon icon={faLinkedin} /></a></div>
+          <div className="brand-icon">  <a href="https://github.com/saintpab1o"> <FontAwesomeIcon icon={faGithub} /></a> </div>
+          <div className="brand-icon">  <a href="https://angel.co/u/paul-magioncalda"> <FontAwesomeIcon icon={faAngellist} /></a>  </div>
         </div>
       </div>
 
