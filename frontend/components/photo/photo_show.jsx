@@ -9,6 +9,7 @@ class PhotoShow extends React.Component {
     }
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId); 
+  
         
     };
 
@@ -17,8 +18,10 @@ class PhotoShow extends React.Component {
 
     render() { 
  
+    
 
         return (
+            
             <div>
                 <div className="photo-feed">
                     <div className="photo">
