@@ -1,6 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router';
-import PhotoIndexItem from './photo_index_item';
+
 
 
 class PhotoShow extends React.Component {

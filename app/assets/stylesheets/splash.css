@@ -352,23 +352,18 @@ a:hover {
  }
 
  .mid-signup-container-content{
-     
+
      display: flex;
      align-items: center;
-     flex-direction: column;
-     
-     
+     flex-direction: column;   
  }
  
 
  .footer{
-  
- height: 20px;
+  height: 20px;
   width: 100%;
   opacity: 96%;
-  background-color: white;
-  
-  
+  background-color: white; 
 }
 
 .left-footer{
@@ -382,7 +377,6 @@ color:grey;
  font-size: 18px;
  margin-bottom: 10px;
  text-align: center;
-
 }
 
 .icon{
@@ -394,7 +388,6 @@ color:grey;
 .logout-button-container{
     display: flex;
     justify-content: flex-end;
-    
     margin-top: 17px;
     margin-right: 60px;
 }
@@ -408,13 +401,7 @@ color:grey;
     align-items: center;
     font-family: sans-serif;
     max-width: 1400px;
-    
-
 }
-
-
-
-
 
 .logout-button-top{
  
@@ -426,7 +413,6 @@ color:grey;
     height: 30px;
     border-radius: 16px;
     border: 1.5px solid black;
-    
     margin-top: 2%;
 }
 
@@ -439,7 +425,6 @@ color:grey;
     height: 30px;
     border-radius: 16px;
     border: 1.5px solid black;
-  
 }
 
 .nav-container{
@@ -447,8 +432,6 @@ color:grey;
   flex-direction: row;
   justify-content: flex-start;
 }
-
-
 
 .stock-images-container{
   margin-left: 28%;
