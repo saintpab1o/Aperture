@@ -8,8 +8,8 @@ class App extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>Turbo Todo</title>
-                    <meta name="description" content="Todos!" />
+                    <title>Aperture</title>
+                    <meta name="description" content="" />
                     <meta name="theme-color" content="app/assets/images/ss.png" />
                 </Helmet>
                 {/* ... */}
