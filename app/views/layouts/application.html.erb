@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Aperture</title>
+    
     <%= csrf_meta_tags %>
+     <meta name="description" content="" />
+    <meta name="image" property="og:image" content="app/assets/images/ss.png">
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -19,11 +22,7 @@
 
       <script type="text/javascript">
         window.splashURL = "<%= image_url("splash.jpg") %>";
-        //window.stock1 = "<%= image_url("stock-1.jpg") %>";
-        //window.stock2 = "<%= image_url("stock-2.jpg") %>";
-        //window.stock3 = "<%= image_url("stock-3.jpg") %>";
-        //window.stock4 = "<%= image_url("stock-4.jpg") %>";
-       // window.stock5 = "<%= image_url("stock-5.jpg") %>";
+
       </script>
 
   </head>
