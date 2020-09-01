@@ -10,7 +10,7 @@ class App extends Component {
                 <Helmet>
                     <title>Aperture</title>
                     <meta name="description" content="" />
-                    <meta name="image" content="app/assets/images/ss.png" />
+                    <meta name="image" property="og:image" content="app/assets/images/ss.png"></meta>
                 </Helmet>
                 {/* ... */}
             </div>
