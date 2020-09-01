@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>Aperture</title>
-    <meta name="description" content="" />
-    <meta name="image" property="og:image" content="app/assets/images/ss.png">
     
     <%= csrf_meta_tags %>
  
@@ -25,7 +23,12 @@
         window.splashURL = "<%= image_url("splash.jpg") %>";
 
       </script>
-
+    <meta property="og:title" content="Aperture" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aperture1.herokuapp.com/#/" />
+    <meta property="og:image" content="/Users/saintpablo/Desktop/aA/Aperture-fullstack/Aperture/app/assets/images/ss.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
   </head>
 
   <body>
