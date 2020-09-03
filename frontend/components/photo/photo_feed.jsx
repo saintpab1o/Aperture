@@ -14,13 +14,9 @@ class PhotoFeed extends React.Component {
             start: 1,
         }
     }
-
- 
-
+    
     componentDidMount() {
         this.props.fetchPhotos();
-
-        
     }
 
     render() { 
@@ -61,10 +57,6 @@ class PhotoFeed extends React.Component {
                 </InfiniteScroll>
               </div>
             </div>
-
-            {/* <div className="footer">
-                    <div className="left-footer">500px clone.</div>
-                </div> */}
           </div>
         );
     }
