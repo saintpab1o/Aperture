@@ -18,6 +18,7 @@
 class Photo < ApplicationRecord
     validates :caption, presence: true
     validates :location, presence: true
+    validates :views, presence: true
 
 
     belongs_to :photographer,
