@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { fetchPhoto } from '../../actions/photo_actions';
 import PhotoShow from './photo_show';
-import { withRouter } from 'react-router';
+
 
 const mapStateToProps = (state, ownProps) => {
     return {
