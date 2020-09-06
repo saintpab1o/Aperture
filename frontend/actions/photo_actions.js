@@ -3,7 +3,6 @@ export const RECEIVE_ALL_PHOTOS = 'RECEIVE_ALL_PHOTOS';
 export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
 export const LOAD_PHOTOS = "LOAD_PHOTO"
 
-
 export const fetchPhotos = () => dispatch => {
     return PhotoUtil.fetchPhotos().then(photos => {
         return dispatch({ type: RECEIVE_ALL_PHOTOS, photos })
