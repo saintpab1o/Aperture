@@ -128,7 +128,6 @@ class LoginForm extends React.Component {
                                 </div>
 
                                 </div>
-
                  </div>
                     </div>
                     </form>
