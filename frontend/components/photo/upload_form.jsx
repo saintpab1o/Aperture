@@ -108,5 +108,4 @@ class UploadForm extends React.Component {
     }
 }
 
-
-    export default UploadForm;
+export default UploadForm;
