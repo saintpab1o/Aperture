@@ -124,7 +124,6 @@ class LoginForm extends React.Component {
                                 <div id="login-button-text-link">
                                     <Link to="/signup">Sign up</Link>
                                 </div>
-
                                 </div>
                  </div>
                     </div>
