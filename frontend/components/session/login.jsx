@@ -116,7 +116,6 @@ class LoginForm extends React.Component {
                         </div>
 
                     <div className="login-button-text-container">
-
                                 <div className="login-button-text-sub">
                                     Don't have an account?  
                                 </div>
