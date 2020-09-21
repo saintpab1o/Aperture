@@ -11,7 +11,23 @@ class PhotoShow extends React.Component {
         this.props.fetchPhoto(this.props.match.params.photoId); 
     };
 
+    
+
+
     render() { 
+        const PhotoIndexItem = ({ photo }) => {
+
+    return (
+        <div className='photo-feed'>
+            <Link to={`/photo/${photo.id}`}>
+                <img className='photo-feed-item' src={photo.photoURL} />
+            </Link>
+            <div className="views">
+                views:{photo.views}
+            </div>
+        </div>
+    )
+}
         return (
             <div>
                 <div className="photo-feed">
@@ -19,6 +35,7 @@ class PhotoShow extends React.Component {
                         <img className='photo-feed-item' src={Object.entries(this.props.photos)} />
                     </div>
                 </div>
+                
             </div>
         );
     }

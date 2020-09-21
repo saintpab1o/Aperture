@@ -15,9 +15,7 @@ class PhotoFeed extends React.Component {
         }
     }
     
-    componentDidMount() {
-        this.props.fetchPhotos();
-    }
+  
 
     render() { 
         const photo = this.props.photos.map(photo => (
