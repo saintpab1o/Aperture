@@ -11,8 +11,8 @@ export const fetchPhotos = () => dispatch => {
 };
 
 export const fetchPhoto = (id) => dispatch => {
-    return PhotoUtil.fetchPhoto(id).then(payload => {
-        return dispatch({ type: RECEIVE_PHOTO, payload })
+    return PhotoUtil.fetchPhoto(id).then(photo => {
+        return dispatch({ type: RECEIVE_PHOTO, photo })
     });
 };
 

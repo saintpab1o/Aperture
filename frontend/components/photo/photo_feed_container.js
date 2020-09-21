@@ -6,7 +6,7 @@ import PhotoFeed from './photo_feed';
 
 const mapStateToProps = state => {
     return {
-        photos: Object.values(state.entities.photos),
+        photos: Object.values(state.entities.photo),
     }
 };
 
