@@ -1,76 +1,73 @@
 import React from 'react';
-
-import PhotoIndexItem from './photo_index_item'
+import PhotoIndexItem from './photo_index_item';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import { Link } from 'react-router-dom';
 import { logout } from '../../actions/session_actions';
+
+
 
 class PhotoFeed extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            images : [],
+            count: 1,
+            start: 1,
+        }
     }
 
     componentDidMount() {
         this.props.fetchPhotos();
+        
     }
 
-    render() {
+  
+
+  
+
+    render() { 
         const photo = this.props.photos.map(photo => (
             <PhotoIndexItem key={photo.id} photo={photo} />
         ));
         return (
-
-            <div>
-{/* 
-                <div className="nav-container">
-
-                    <div className="login-nav-header">
-                        <Link to="/">Aperture</Link>
-                    </div>
-
-
-                </div>
-
-                <div className="logout-button-container">
-
-                    <div className="upload-button-top">
-                        <Link to="/upload">Upload</Link>
-                    </div>
-
-                    <div>
-                        <button className="logout-button-top" onClick={this.props.logout}>Log Out</button>
-                    </div>
-                </div> */}
-
-          
-
-
-
-                  
-
-
-           
-
-
-
-            <div className='photo-feed'>
-                
-                
-                <div className='photo'>
-                    {photo}
-                </div>
-
+          <div>
+            <div className="photo-feed">
+              <div className="photo">
+                <InfiniteScroll
+                  dataLength={items.length} //This is important field to render the next data
+                  next={fetchData}
+                  hasMore={true}
+                  loader={<h4>Loading...</h4>}
+                  endMessage={
+                    <p style={{ textAlign: "center" }}>
+                      <b>Yay! You have seen it all</b>
+                    </p>
+                  }
+                  // below props only if you need pull down functionality
+                  refreshFunction={this.refresh}
+                  pullDownToRefresh
+                  pullDownToRefreshThreshold={50}
+                  pullDownToRefreshContent={
+                    <h3 style={{ textAlign: "center" }}>
+                      &#8595; Pull down to refresh
+                    </h3>
+                  }
+                  releaseToRefreshContent={
+                    <h3 style={{ textAlign: "center" }}>
+                      &#8593; Release to refresh
+                    </h3>
+                  }
+                >
+                  {items}
+                </InfiniteScroll>
+              </div>
             </div>
 
-
-
-
-                <div className="footer">
+            {/* <div className="footer">
                     <div className="left-footer">500px clone.</div>
-                </div>
-
-
-            </div>
-        )
+                </div> */}
+          </div>
+        );
     }
 }
 

@@ -19,6 +19,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
   fetchPhotos: () => dispatch(fetchPhotos()),
+  getPhoto: () => dispatch(getPhoto()),
 });
 
 export default connect(mapStateToProps,mapDispatchToProps)(Splash);
