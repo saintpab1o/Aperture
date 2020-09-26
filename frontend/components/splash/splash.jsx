@@ -20,27 +20,32 @@ class SplashPage extends React.Component {
     super(props);
     this.state = {
       images: [],
-      count: 1,
+      count: 2,
       start: 1,
     };
+     this.loadPhotos = this.loadPhotos.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchPhotos();
   }
-  
-  fetchNextPhotos(){
-    
-  }
 
-  
+  loadPhotos = () => {
+    const {count, start} = this.state
+    this.setState({ start: this.state.start + count });
+    this.setState({images: this.state.images.concat(this.props.photos)});
+    console.log(this.state)
+ 
+   
+    
+    
+  };
 
   render() {
-    
+  
+
     const photo = this.props.photos.map((photo) => (
-      <PhotoIndexItem key={photo.id} photo={photo} 
-      />
-      
+      <PhotoIndexItem key={photo.id} photo={photo} />
     ));
 
     const sessionLinks = () => (
@@ -236,7 +241,7 @@ class SplashPage extends React.Component {
             <div className="photo">
               <InfiniteScroll
                 dataLength={this.state.images.length} //This is important field to render the next data
-                next={this.fetchNextPhoto}
+                next={this.loadPhotos}
                 hasMore={true}
                 loader={<h4>Loading...</h4>}
               >
