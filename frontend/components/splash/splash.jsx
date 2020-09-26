@@ -9,6 +9,8 @@ import {faAngellist} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import PhotoIndexItem from '../photo/photo_index_item';
 import InfiniteScroll from "react-infinite-scroll-component";
+import Image from "../photo/image";
+
 
 
 
@@ -20,29 +22,37 @@ class SplashPage extends React.Component {
     super(props);
     this.state = {
       images: [],
-      count: 2,
+      count: 1,
       start: 1,
     };
-     this.loadPhotos = this.loadPhotos.bind(this);
+    this.loadPhotos = this.loadPhotos.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchPhotos();
+    
+    
+    
   }
 
+  
+
   loadPhotos = () => {
-    const {count, start} = this.state
+    const { count, start } = this.state;
     this.setState({ start: this.state.start + count });
-    this.setState({images: this.state.images.concat(this.props.photos)});
+    this.setState({ images: this.state.images.concat(this.props.photos) });
+  
     console.log(this.state)
- 
-   
-    
+  //   this.props.photos.map((photo) => (
+  //  <Image key={photo.id} photo={photo}/>
+  //      ));
     
   };
 
   render() {
-  
+    
+   
+
 
     const photo = this.props.photos.map((photo) => (
       <PhotoIndexItem key={photo.id} photo={photo} />
