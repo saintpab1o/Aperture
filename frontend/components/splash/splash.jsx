@@ -22,14 +22,20 @@ class SplashPage extends React.Component {
     super(props);
     this.state = {
       images: [],
-      count: 1,
+      count: 10,
       start: 1,
     };
-    this.loadPhotos = this.loadPhotos.bind(this);
+   
   }
 
   componentDidMount() {
-    this.props.fetchPhotos();
+    this.props.fetchPhotos().then((response) => {
+      this.setState({
+        images: response.photos,
+      
+      });
+       
+    });
     
     
     
@@ -42,19 +48,18 @@ class SplashPage extends React.Component {
     this.setState({ start: this.state.start + count });
     this.setState({ images: this.state.images.concat(this.props.photos) });
   
-    console.log(this.state)
-  //   this.props.photos.map((photo) => (
-  //  <Image key={photo.id} photo={photo}/>
-  //      ));
     
-  };
+ };
 
   render() {
     
    
 
+debugger
 
-    const photo = this.props.photos.map((photo) => (
+
+
+    const photo = this.state.images.map((photo) => (
       <PhotoIndexItem key={photo.id} photo={photo} />
     ));
 
