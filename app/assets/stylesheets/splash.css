@@ -455,48 +455,4 @@ color:grey;
   margin-top: 2%;
 }
 
-@media only screen and (max-width: 850px){
 
-    header{
-        position: relative;
-    }
-    header ul{
-        width: 100%;
-        background: #333333;
-        max-height: 0px;
-        overflow: hidden;
-    }
-    header ul li {
-        width: 100%;
-    }
-
-    header ul li ul{ 
-        position: static;
-        width: 180px;
-        display: block;
-        width: 100%;
-        
-}
-.showing{
-    display: block;
-
-}
-
-
-header ul li ul li a{
-    padding: 10px;
-    background: #333333;
-    color: white;
-    padding-left:50px;
-}
-
-header .menu-toggle{
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 1.9em;
-}
-header .logo{
-    margin-left: .5em;
-}
