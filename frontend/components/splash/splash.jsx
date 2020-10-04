@@ -47,15 +47,13 @@ class SplashPage extends React.Component {
     const { count, start } = this.state;
     this.setState({ start: this.state.start + count });
     this.setState({ images: this.state.images.concat(this.props.photos) });
-  
-    
  };
 
   render() {
     
    
 
-debugger
+
 
 
 
