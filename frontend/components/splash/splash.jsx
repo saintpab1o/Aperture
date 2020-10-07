@@ -9,7 +9,7 @@ import {faAngellist} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import PhotoIndexItem from '../photo/photo_index_item';
 import InfiniteScroll from "react-infinite-scroll-component";
-import Image from "../photo/image";
+
 
 
 
@@ -24,6 +24,7 @@ class SplashPage extends React.Component {
       images: [],
       count: 10,
       start: 1,
+      likes: 0,
     };
    
   }
@@ -41,7 +42,10 @@ class SplashPage extends React.Component {
     
   }
 
-  
+  addLike(){
+    
+
+  }
 
   loadPhotos = () => {
     const { count, start } = this.state;

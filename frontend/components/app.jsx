@@ -5,7 +5,7 @@ import LoginContainer from './session/login_container'
 import UploadFormContainer from './photo/upload_form_container'
 import PhotoFeedContainer from './photo/photo_feed_container'
 import { Switch } from 'react-router-dom'
-
+import PhotoShowContainer from './photo/photo_show_container'
 import {Route,} from 'react-router-dom'
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
@@ -17,6 +17,8 @@ const App = () => (
    
     <Switch>
         <Route exact path="/" component={SplashContainer} />
+
+      <Route exact path='/photo/:photoId' component={PhotoShowContainer} />
         
         <ProtectedRoute exact path='/home' component={PhotoFeedContainer} />
         <ProtectedRoute exact path='/upload' component={UploadFormContainer} />
