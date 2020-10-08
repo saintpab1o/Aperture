@@ -11,8 +11,9 @@ import PhotoIndexItem from './photo_index_item';
 class PhotoShow extends React.Component {
     constructor(props) {
         super(props);
+     
  
-   
+
     }
 
     componentDidMount() {
@@ -22,22 +23,17 @@ class PhotoShow extends React.Component {
     };
 
 
-  
+
 
 
     render() {
         
-     
-     
-     console.log(this.props.photos)
-     
 
         return (
             <div>
                 <div className="photo-feed">
                     <div className="photo">
-                        {/* <img className='photo-feed-item' src={photo} /> */}
-                        
+                        <img className='photo-feed-item' src={Object.entries(this.props.photos)} />
                     </div>
                 </div>
             </div>
