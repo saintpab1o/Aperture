@@ -27,6 +27,8 @@ class PhotoShow extends React.Component {
 
     render() {
         
+     
+     
      console.log(this.props.photos)
      
 
@@ -34,7 +36,8 @@ class PhotoShow extends React.Component {
             <div>
                 <div className="photo-feed">
                     <div className="photo">
-                        {/* <img className='photo-feed-item' src={this.props.photos} /> */}
+                        {/* <img className='photo-feed-item' src={photo} /> */}
+                        
                     </div>
                 </div>
             </div>
