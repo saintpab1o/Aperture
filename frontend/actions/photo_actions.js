@@ -22,7 +22,7 @@ export const fetchPhotos = () => dispatch => {
     });
 };
 
-export const fetchPhoto = id => dispatch => {
+export const fetchPhoto = (id) => dispatch => {
     return PhotoUtil.fetchPhoto(id).then(payload => {
         return dispatch({ type: RECEIVE_PHOTO, payload })
     });

@@ -1,4 +1,6 @@
 import React from 'react';
+import { withRouter } from 'react-router';
+import PhotoIndexItem from './photo_index_item';
 
 
 
@@ -9,31 +11,30 @@ import React from 'react';
 class PhotoShow extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            images: [],
-            count: 1,
-            start: 1,
-        }
+ 
+   
     }
 
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId);
         
+        
     };
 
 
-
+  
 
 
     render() {
-        // const photo = this.props.photos.map(photo => (
-        //     <PhotoShow key={photo.id} photo={photo} />
-        // ));
+        
+     console.log(this.props.photos)
+     
+
         return (
             <div>
                 <div className="photo-feed">
                     <div className="photo">
-                        {/* {photo} */}
+                        {/* <img className='photo-feed-item' src={this.props.photos} /> */}
                     </div>
                 </div>
             </div>
