@@ -11,6 +11,7 @@ import PhotoIndexItem from './photo_index_item';
 class PhotoShow extends React.Component {
     constructor(props) {
         super(props);
+  
      
  
 
@@ -27,6 +28,7 @@ class PhotoShow extends React.Component {
 
 
     render() {
+        // console.log(Object.entries())
         
 
         return (

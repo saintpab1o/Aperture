@@ -13,28 +13,17 @@ import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
 const App = () => (
   <div>
- 
-   
     <Switch>
-        <Route exact path="/" component={SplashContainer} />
+      <Route exact path="/" component={SplashContainer} />
 
       <Route exact path='/photo/:photoId' component={PhotoShowContainer} />
         
-        <ProtectedRoute exact path='/home' component={PhotoFeedContainer} />
-        <ProtectedRoute exact path='/upload' component={UploadFormContainer} />
+      <ProtectedRoute exact path='/home' component={PhotoFeedContainer} />
+      <ProtectedRoute exact path='/upload' component={UploadFormContainer} />
 
-        <AuthRoute exact path="/login" component={LoginContainer} />
-        <AuthRoute path="/signup" component={SignupContainer} />
-      </Switch>
-     
-  
-
-   
-
-    
-    
-
-
+      <AuthRoute exact path="/login" component={LoginContainer} />
+      <AuthRoute path="/signup" component={SignupContainer} />
+    </Switch>
   </div>
 );
 
