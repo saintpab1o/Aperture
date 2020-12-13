@@ -11,12 +11,6 @@ import PhotoIndexItem from '../photo/photo_index_item';
 import InfiniteScroll from "react-infinite-scroll-component";
 
 
-
-
-
-
-
-
 class SplashPage extends React.Component {
   constructor(props) {
     super(props);
@@ -34,16 +28,11 @@ class SplashPage extends React.Component {
       this.setState({
         images: response.photos,
       
-      });
-       
+      });  
     });
-    
-    
-    
   }
 
   addLike(){
-    
 
   }
 
@@ -55,12 +44,6 @@ class SplashPage extends React.Component {
 
   render() {
     
-   
-
-
-
-
-
     const photo = this.state.images.map((photo) => (
       <PhotoIndexItem key={photo.id} photo={photo} />
     ));
@@ -191,12 +174,10 @@ class SplashPage extends React.Component {
             </div>
           </div>
         </div>
-
         <br></br>
         <br></br>
         <br></br>
         <br></br>
-
         <div className="mid-signup-container">
           <div className="mid-signup-container-content">
             <div className="mid-signup-top-text">
@@ -273,7 +254,6 @@ class SplashPage extends React.Component {
         </div>
       </div>
     );
-
     //   return currentUser ? welcomeMessage() : sessionLinks();
     // };
 
