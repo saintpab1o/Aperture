@@ -15,10 +15,8 @@ const mapStateToProps = state => {
 
   })
 }
-
   // currentUser: state.session.currentUser,
   // photos: Object.values(state.entities.photos)
-
 
 const mapDispatchToProps = (dispatch) => ({
   logout: () => dispatch(logout()),

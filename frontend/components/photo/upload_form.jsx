@@ -33,12 +33,6 @@ class UploadForm extends React.Component {
         }
     };
 
- 
-
-
-
-
-
     handleSubmit(e) {
         e.preventDefault();
         const formData = new FormData();
@@ -54,27 +48,16 @@ class UploadForm extends React.Component {
         });
     };
 
-
-
-
-    render() {
-
-        
+    render() { 
         // console.log(this.state);
         const preview = this.state.photoUrl ? <img className='image-preview' src={this.state.photoUrl} /> : <img className='image-preview' height='150px' width='150px' />;
         return (
-
-
          <div>
-
-
                 <div className="nav-container"> 
 
                 <div className="login-nav-header">
                     <Link to="/">Aperture</Link>
                 </div>
-
-
         </div>
 
                 <div className="logout-button-container">
@@ -88,30 +71,12 @@ class UploadForm extends React.Component {
                     </div>
                 </div>
 
-       
-           
-
-
-
-            
-
-
         <div className="outerbox-upload">
-             
-    
-            <div className="upload-form-container"> 
-
-         
-
-                    <div className="login-text-top">Upload Photos</div>
-
-
-
-            <form onSubmit={this.handleSubmit.bind(this)}>
-
-        <div className="upload-text-container">
-               
-                <label className='photo-caption-text'>Caption:
+             <div className="upload-form-container"> 
+                <div className="login-text-top">Upload Photos</div>
+                    <form onSubmit={this.handleSubmit.bind(this)}>
+                        <div className="upload-text-container">
+             <label className='photo-caption-text'>Caption:
                     <input type='text'
                         value={this.state.title}
                         className='photo-caption-input'
@@ -125,50 +90,19 @@ class UploadForm extends React.Component {
                         className='photo-location-input'
                         onChange={this.handleInput('location')} />
                 </label>
-
-                
-           
-
-                            <div>
-
-
-                                <label className="file-button">
-
-                                    <input type="file"
-
-
-
-                                        onChange={this.handleFile.bind(this)} />
-                                </label>
-
-                                    {preview}
-
-                            </div>
-
-                
-
-               
-
-                                <div>
-                                    <button className="upload-button-bottom" onClick={this.handleSubmit}>Upload</button>
-                                </div>
-
+            <div>
+            <label className="file-button">
+            <input type="file"
+            onChange={this.handleFile.bind(this)}/></label>
+             {preview}
+             </div>
+                <div>
+                <button className="upload-button-bottom" onClick={this.handleSubmit}>Upload</button>
+                </div>
          </div>       
-
-
-                
-
-
-
-
             </form>
         </div>
-
      </div>
-
-
-
-
     </div>      
         );
     }
