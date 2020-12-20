@@ -1,5 +1,4 @@
 import * as PhotoUtil from '../util/photo';
-
 export const RECEIVE_ALL_PHOTOS = 'RECEIVE_ALL_PHOTOS';
 export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
 export const LOAD_PHOTOS = "LOAD_PHOTO"

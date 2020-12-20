@@ -20,7 +20,7 @@ class SplashPage extends React.Component {
       start: 1,
       likes: 0,
     };
-   
+  
   }
 
   componentDidMount() {
@@ -30,10 +30,6 @@ class SplashPage extends React.Component {
       
       });  
     });
-  }
-
-  addLike(){
-
   }
 
   loadPhotos = () => {
@@ -54,7 +50,6 @@ class SplashPage extends React.Component {
           <div className="aperture-header">
             <Link to="/">Aperture</Link>
           </div>
-
           <div className="brand-container">
             <div className="brand-icon">
               {" "}
@@ -79,17 +74,14 @@ class SplashPage extends React.Component {
             </div>
           </div>
         </div>
-
         <div className="splash-nav">
           <div className="splash-login">
             <Link to="/login">Log in</Link>
           </div>
-
           <div className="splash-signup">
             <Link to="/signup">Sign up</Link>
           </div>
         </div>
-
         <div className="splash-img">
           <img
             src={window.splashURL}
@@ -98,7 +90,6 @@ class SplashPage extends React.Component {
             height="100%"
           ></img>
         </div>
-
         <div className="splash-text-top">Discover and share</div>
         <div className="splash-text-mid">the world’s best</div>
         <div className="splash-text-bottom">photos</div>
@@ -108,21 +99,16 @@ class SplashPage extends React.Component {
         <div className="splash-mini-bottom2">
           around the world. We're not guided by fads—just great photography.
         </div>
-
         <div className="signup-button">
           <Link to="/signup">Sign up</Link>
         </div>
-
         <div className="mid-text-header">What makes us different</div>
-
         <div className="mid-content-container">
           <div className="grow-container">
             <div className="icon">
               <FontAwesomeIcon icon={faSeedling} />
             </div>
-
-            <div className="mid-text-grow">Grow as a photographer</div>
-
+               <div className="mid-text-grow">Grow as a photographer</div>
             <div className="mid-text-grow-sub">
               Get immediate exposure with your first upload.
               <br></br>
@@ -135,14 +121,11 @@ class SplashPage extends React.Component {
               receive valuable feedback on day one.
             </div>
           </div>
-
           <div className="build-container">
             <div className="icon">
               <FontAwesomeIcon icon={faHammer} />
             </div>
-
             <div className="mid-text-build"> Build your career</div>
-
             <div className="mid-text-build-sub">
               Present yourself as a professional. Get hired
               <br></br>
@@ -155,7 +138,6 @@ class SplashPage extends React.Component {
               work.{" "}
             </div>
           </div>
-
           <div className="performance-container">
             <div className="icon">
               <FontAwesomeIcon icon={faChartBar} />
@@ -190,13 +172,11 @@ class SplashPage extends React.Component {
             <div className="mid-signup-last-text">
               photos daily, and get rewarded for your talents.
             </div>
-
             <div className="bottom-purp-signup-button">
               <Link to="/signup">Sign up</Link>
             </div>
           </div>
         </div>
-
         <div className="footer">
           <div className="left-footer">500px clone.</div>
         </div>
@@ -254,9 +234,6 @@ class SplashPage extends React.Component {
         </div>
       </div>
     );
-    //   return currentUser ? welcomeMessage() : sessionLinks();
-    // };
-
     return this.props.currentUser ? welcomeMessage() : sessionLinks();
   }
 }

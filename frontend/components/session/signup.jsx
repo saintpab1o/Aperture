@@ -15,9 +15,6 @@ class Signup extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-
-
-
     handleInput(type){
         return (e) => {
             this.setState({ [type]: e.target.value}) 
@@ -47,54 +44,24 @@ class Signup extends React.Component {
     render () {
         return (
             <div>
-
                 <div className="login-header-container">
-                
-
                 <div className="login-nav-header">
                     <Link to="/">Aperture</Link>
                 </div>
-
-            <div className="splash-nav">
-                
-               
-                
-                
+            <div className="splash-nav">          
                 <div className= "splash-login">
                     <Link to="/login">Log in</Link>
                 </div>
-                
-
                 <div className= "splash-signup">
                   <Link to="/signup">Sign up</Link>
              </div>
-
              </div>
-
             </div>
-
-                
-
-                <div className="outerbox">
-
-                  
-           
-
-           <div
-           
-               className="signup-form-container">
-
-                      
-
-                        <div class="signup-text-top">Aperture.</div>
-
-                            <div class="signup-text-bottom">Join us and start sharing today!</div>
-
-                        
-
-                    <form>
-                            
-
+            <div className="outerbox">
+           <div className="signup-form-container">
+                <div class="signup-text-top">Aperture.</div>
+                    <div class="signup-text-bottom">Join us and start sharing today!</div>
+                     <form>
                         <div className="signup-username">
                              <label>Username:
                                  <input
@@ -104,10 +71,8 @@ class Signup extends React.Component {
                                     />
                             </label>
                             </div>
-
                             <div className="signup-email">
-                            <label>Email:
-                               
+                            <label>Email:  
                             <input
                                 type="text"
                                 value={this.state.email}
@@ -115,7 +80,6 @@ class Signup extends React.Component {
                             />
                         </label>
                         </div>
-
                         <div className="signup-password">
                         <label>Password:
                             <input
@@ -130,27 +94,15 @@ class Signup extends React.Component {
                                 </div>
 
                         </div>
-
                         <div>
                             <button className="sign-up-button" onClick={this.handleSubmit}>Sign Up</button>
                         </div>
-
-                          
-
                     </form>
-                            
-
                     </div>
-
-
                 </div>
-
                 <div className="footer">
-                    <div className="left-footer">500px clone.</div>
-                    
+                    <div className="left-footer">500px clone.</div>  
                 </div>
-
-
             </div>
         )
     }

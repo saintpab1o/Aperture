@@ -2,16 +2,6 @@ import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO} from '../actions/photo_actions';
 import { LOAD_PHOTOS } from "../actions/photo_actions";
 import merge from 'lodash/merge';
 
-// const initialState = {
-//     caption: [],
-//     id: [],
-//     location: [],
-//     photoUrl: [],
-//     photographer_id: [],
-// }
-
-
-
 const photosReducer  = (state = {}, action) => {
     Object.freeze(state);
 
@@ -22,10 +12,6 @@ const photosReducer  = (state = {}, action) => {
         case RECEIVE_PHOTO: 
             return merge({}, state, { [action.payload.photoUrl]: action.payload.photoUrl });
          
-          
-            
-            
-
          case LOAD_PHOTOS:
            return merge({}, state, action.photos);
 
