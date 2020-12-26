@@ -18,8 +18,6 @@ export const clearErrors = () => {
   })
 };
 
-
-
 const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
   user,
