@@ -76,11 +76,6 @@ class LoginForm extends React.Component {
 
              </div>
              </div>
-
-
-              
-
-
             <div className="outerbox">
 
                    
