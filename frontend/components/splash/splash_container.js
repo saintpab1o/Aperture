@@ -12,7 +12,6 @@ const mapStateToProps = state => {
   return ({
     currentUser: state.session.currentUser,
     photos: Object.values(state.entities.photos)
-
   })
 }
 
