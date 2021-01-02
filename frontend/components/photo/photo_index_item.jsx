@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const PhotoIndexItem = ({ photo }) => {
 
     return (
@@ -9,7 +10,6 @@ const PhotoIndexItem = ({ photo }) => {
                 <img className='photo-feed-item' src={photo.photoURL} />
             </Link>
             <div className="views">
-                {/* views:{photo.views} */}
             </div>
         </div>
     )
