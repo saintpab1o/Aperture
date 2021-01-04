@@ -27,8 +27,7 @@ class PhotoShow extends React.Component {
 
 
 
-    render() {
-        
+    render() { 
         return (
             <div>
                 <div className="photo-feed">
@@ -40,5 +39,4 @@ class PhotoShow extends React.Component {
         );
     }
 }
-
 export default PhotoShow;
