@@ -11,10 +11,6 @@ import PhotoIndexItem from './photo_index_item';
 class PhotoShow extends React.Component {
     constructor(props) {
         super(props);
-  
-     
- 
-
     }
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId); 
