@@ -4,9 +4,6 @@ import PhotoIndexItem from './photo_index_item';
 
 
 
-// import { logout } from '../../actions/session_actions';
-
-
 
 class PhotoShow extends React.Component {
     constructor(props) {
