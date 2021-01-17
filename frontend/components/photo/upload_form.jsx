@@ -60,7 +60,6 @@ class UploadForm extends React.Component {
         </div>
 
                 <div className="logout-button-container">
-
                     <div className="upload-button-top">
                         <Link to="/upload">Upload</Link>
                     </div>
