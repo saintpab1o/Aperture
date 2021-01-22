@@ -4,17 +4,6 @@ export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
 export const LOAD_PHOTOS = "LOAD_PHOTO"
 
 
-// export const receiveAllPhotos = data => ({
-//     type: RECEIVE_ALL_PHOTOS,
-//     data
-// });
-
-// export const receivePhoto = data => ({
-//     type: RECEIVE_PHOTO,
-//     data
-// });
-
-
 export const fetchPhotos = () => dispatch => {
     return PhotoUtil.fetchPhotos().then(photos => {
         return dispatch({ type: RECEIVE_ALL_PHOTOS, photos })
@@ -35,3 +24,13 @@ export const loadPhotos = () => (dispatch) => {
     return dispatch({ type: RECEIVE_ALL_PHOTOS, photos });
   });
 };
+
+// export const receiveAllPhotos = data => ({
+//     type: RECEIVE_ALL_PHOTOS,
+//     data
+// });
+
+// export const receivePhoto = data => ({
+//     type: RECEIVE_PHOTO,
+//     data
+// });
