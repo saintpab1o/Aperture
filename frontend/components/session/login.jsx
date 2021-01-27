@@ -73,7 +73,6 @@ class LoginForm extends React.Component {
                 <div className= "splash-signup">
                     <Link to="/signup">Sign up</Link>
                 </div>
-
              </div>
              </div>
             <div className="outerbox">
