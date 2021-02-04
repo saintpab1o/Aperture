@@ -50,7 +50,6 @@ class LoginForm extends React.Component {
                     <div className="login-nav-header">
                     <Link to="/">Aperture</Link>
                     </div>
-
                      <div className="splash-nav">
                 
                 <div className= "splash-login">
