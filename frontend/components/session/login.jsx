@@ -62,9 +62,6 @@ class LoginForm extends React.Component {
 
                      <div className="splash-nav">
                 
-               
-                
-                
                 <div className= "splash-login">
                     <Link to="/login">Log in</Link>
                 </div>
