@@ -48,7 +48,6 @@ class LoginForm extends React.Component {
     render () {
         return (
             <div>
-
                 <div className="login-header-container">
 
                     <div className="login-nav-header">
