@@ -19,6 +19,7 @@ class PhotoShow extends React.Component {
 
     };
 
+    
     render() { 
         return (
             <div>
