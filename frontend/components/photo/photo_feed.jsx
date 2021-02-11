@@ -15,12 +15,11 @@ class PhotoFeed extends React.Component {
         }
     }
 
-    componentWillUnmount(){
-      console.log('hello from unmounted state')
-    }
+ 
 
     componentDidMount() {
         this.props.fetchPhotos();
+
         
     }
 
