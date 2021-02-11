@@ -12,14 +12,16 @@ class PhotoShow extends React.Component {
         }
     }
 
-    componentDidMount() {
-        this.props.fetchPhoto(this.props.match.params.photoId);
-        this.setState({ photoUrl: Object.entries(this.props.photos) })
-        console.log(this.state)
+    
 
+    componentDidMount() {
+        
+        this.props.fetchPhoto(this.props.match.params.photoId);
+       
     };
 
-    
+
+// Object.entries(this.props.photos)
     render() { 
         return (
             <div>
