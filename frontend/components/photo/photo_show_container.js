@@ -6,8 +6,7 @@ import PhotoShow from './photo_show';
 const mapStateToProps = (state, ownProps) => {
     return {
         photos: state.entities.photos,
-        photo: state.entities.photos[ownProps.match.params.photoId],
-        pics: Object.values(state.entities.photos)
+        photo: state.entities.photos[ownProps.match.params.photoId]
        
     }
 };
@@ -18,3 +17,5 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PhotoShow)
+
+// pics: Object.values(state.entities.photos)
