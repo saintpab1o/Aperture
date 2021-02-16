@@ -11,7 +11,6 @@ class PhotoShow extends React.Component {
         this.props.fetchPhoto(this.props.match.params.photoId); 
     };
 
-
     render() { 
         return (
             <div>
