@@ -12,19 +12,15 @@ class PhotoShow extends React.Component {
 
     };
 
-    
-
 
     render() { 
         return (
-            
             <div>
                 <div className="photo-feed">
                     <div className="photo">
                         <img className='photo-feed-item' src={Object.entries(this.props.photos)} />
                     </div>
                 </div>
-                
             </div>
         );
     }
