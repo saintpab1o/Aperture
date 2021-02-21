@@ -9,9 +9,11 @@ class PhotoShow extends React.Component {
     }
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId); 
+        
     };
 
     render() { 
+        
         const photo = this.props.photo;
         console.log(this.props.photo)
         return (
