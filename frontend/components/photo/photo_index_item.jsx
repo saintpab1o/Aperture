@@ -10,7 +10,7 @@ const PhotoIndexItem = ({ photo }) => {
                 <img className='photo-feed-item' src={photo.photoURL} />
             </Link>
             <div className="views">
-                views:{photo.views}
+                {/* views:{photo.views} */}
             </div>
         </div>
     )

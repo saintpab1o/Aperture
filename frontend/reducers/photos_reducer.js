@@ -1,5 +1,5 @@
 import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO} from '../actions/photo_actions';
-import { LOAD_PHOTOS } from "../actions/photo_actions";
+
 import merge from 'lodash/merge';
 
 const photosReducer  = (state = {}, action) => {
@@ -10,10 +10,7 @@ const photosReducer  = (state = {}, action) => {
             return merge({}, state, action.photos);
 
         case RECEIVE_PHOTO: 
-            return ({}, state, { [action.photo.id]: action.photo.photo });
-         
-         case LOAD_PHOTOS:
-           return merge({}, state, action.photos);
+            return merge({}, state, { [action.photo.id]: action.photo });
 
         default:
             return state;

@@ -5,7 +5,6 @@ import PhotoShow from './photo_show';
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        photos: state.entities.photos,
         photo: state.entities.photos[ownProps.match.params.photoId]
     }
 };
