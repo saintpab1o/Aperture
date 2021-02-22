@@ -15,4 +15,3 @@ const mapDispatchToProps = (dispatch) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(PhotoShow)
 
-// pics: Object.values(state.entities.photos)

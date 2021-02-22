@@ -13,6 +13,7 @@ class PhotoShow extends React.Component {
 
     render() { 
         const photo = this.props.photo;
+        console.log(this.props.photo)
         return (
             <div>
                 <div className="photo-feed">
