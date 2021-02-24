@@ -2,10 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faAngellist } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
 
 class PhotoShow extends React.Component {
     constructor(props) {
@@ -13,7 +9,6 @@ class PhotoShow extends React.Component {
     }
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId); 
-        
     };
 
     render() { 
@@ -35,7 +30,7 @@ class PhotoShow extends React.Component {
                     <div>
                         <button className="logout-button-top" onClick={this.props.logout}>
                             Log Out
-            </button>
+                        </button>
                     </div>
                 </div>
 
@@ -46,13 +41,12 @@ class PhotoShow extends React.Component {
                 <div className="home-feed-text2">
                     <h4>Featured photographers</h4>
                 </div>
+
                 <div className="home-feed-text3">
                     <p>Find photographers to follow</p>
                 </div>
             </div>
         )
-
-        
         return (    
             <div>
                 {welcomeMessage()}
