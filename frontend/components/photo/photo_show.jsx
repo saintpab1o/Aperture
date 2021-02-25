@@ -3,17 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
+
 class PhotoShow extends React.Component {
     constructor(props) {
         super(props);
-        
+     
     }
+
     componentDidMount() {
         this.props.fetchPhoto(this.props.match.params.photoId); 
     };
 
     render() { 
         const photo = this.props.photo;
+
         console.log(photo)
 
         const welcomeMessage = () => (

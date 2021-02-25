@@ -39,7 +39,7 @@ class PhotoFeed extends React.Component {
                   // below props only if you need pull down functionality
                   refreshFunction={this.refresh}
                   pullDownToRefresh
-                  pullDownToRefreshThreshold={50}
+                  pullDownToRefreshThreshold={20}
                   pullDownToRefreshContent={
                     <h3 style={{ textAlign: "center" }}>
                       &#8595; Pull down to refresh
