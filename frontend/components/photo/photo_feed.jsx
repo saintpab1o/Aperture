@@ -15,7 +15,6 @@ class PhotoFeed extends React.Component {
         }
     }
     
-
     render() { 
         const photo = this.props.photos.map(photo => (
             <PhotoIndexItem key={photo.id} photo={photo} />
