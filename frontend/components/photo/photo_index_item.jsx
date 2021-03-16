@@ -5,6 +5,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 
 const PhotoIndexItem = ({ photo }) => {
+    
     return (
         <div className='photo-feed'>
             <Link to={`/photo/${photo.id}`}>
