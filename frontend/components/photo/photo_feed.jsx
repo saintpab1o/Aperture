@@ -58,4 +58,5 @@ class PhotoFeed extends React.Component {
     }
 }
 
+
 export default PhotoFeed;
