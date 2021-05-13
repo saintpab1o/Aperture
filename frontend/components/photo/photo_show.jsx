@@ -16,7 +16,7 @@ class PhotoShow extends React.Component {
     render() { 
         const photo = this.props.photo;
 
-        // console.log(photo)
+       
 
         const welcomeMessage = () => (
             <div>
