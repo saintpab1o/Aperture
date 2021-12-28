@@ -84,7 +84,6 @@ class LoginForm extends React.Component {
                 
                
                     <form>
-
                             <div className="login-text-top">Log in to Aperture</div>
 
                             
