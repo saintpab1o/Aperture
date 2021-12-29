@@ -9,9 +9,7 @@ import { withRouter } from 'react-router';
 const mapStateToProps = (state, ownProps) => {
     return {
         photo: state.entities.photos[ownProps.match.params.photoId],
-        photos: state.entities.photos,
-        
-        
+        photos: state.entities.photos,    
     }
 };
 
