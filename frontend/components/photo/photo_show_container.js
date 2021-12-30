@@ -15,8 +15,6 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => ({
    fetchPhoto: id => dispatch(fetchPhoto(id)),
-  
-   
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PhotoShow)
